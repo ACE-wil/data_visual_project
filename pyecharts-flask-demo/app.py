@@ -1,20 +1,32 @@
+from random import randrange
+from pyecharts import options as opts
+from pyecharts.charts import Bar
+from pyecharts.faker import Faker
 
-from flask import Flask, render_template, request, session, redirect, url_for,jsonify
+from flask.json import jsonify
+from flask import Flask, render_template, request
 from markupsafe import Markup
+from pyecharts import options as opts
+from pyecharts.charts import Line
 from pyecharts.charts import Bar
 from flask import Flask
-# from jinja2 import Markup, Environment, FileSystemLoader
+from jinja2 import Markup, Environment, FileSystemLoader
+from pyecharts.faker import Faker
 from pyecharts.globals import CurrentConfig
+import pandas
+from requests_html import HTMLSession
+import json
+import pandas as pd
+from flask_cors import CORS
+#%%
 from pyecharts import options as opts
 from pyecharts.charts import WordCloud
 from pyecharts.globals import SymbolType
-from flask_cors import CORS
-# # 关于 CurrentConfig，可参考 [基本使用-全局变量]
-# CurrentConfig.GLOBAL_ENV = Environment(loader=FileSystemLoader("./templates"))
+# 关于 CurrentConfig，可参考 [基本使用-全局变量]
+CurrentConfig.GLOBAL_ENV = Environment(loader=FileSystemLoader("./templates"))
 app = Flask(__name__, static_url_path='/static', static_folder='static', template_folder='templates')
 CORS(app)
 
-# 拿数据
 def get_data(job_name,city_name):
     import pandas
     from requests_html import HTMLSession
@@ -147,46 +159,158 @@ def get_data(job_name,city_name):
         'comp.compIndustry': '行业',
         'comp.compScale': '规模'
     })
+    df_PM_gz
+    非薪资面议 = df_PM_gz[~df_PM_gz['薪资'].str.contains("面议|元/天")]
+    非薪资面议
+    非薪资面议_detail = 非薪资面议['薪资'].apply(lambda x: x.split('薪')[0].split('·')).tolist()
+    非薪资面议_detail
+    平均薪资 = [(int(i[0].split('-')[0]) + int(i[0].split('-')[1].split('k')[0])) / 2 \
+                    if len(i) == 1 else round(
+        (int(i[0].split('-')[0]) + int(i[0].split('-')[1].split('k')[0])) / 2 * int(i[1]) / 12, 1) \
+                for i in 非薪资面议_detail]
+    平均薪资
+    非薪资面议['平均薪资'] = 平均薪资
+    分地区_平均薪资 = 非薪资面议.groupby('地区').agg({'平均薪资': 'median'})
+    分地区_平均薪资_values = [round(i[0], 1) for i in 分地区_平均薪资.values.tolist()]
+    分地区_平均薪资_values
+    分地区_平均薪资_index = 分地区_平均薪资.index.tolist()
+    分地区_平均薪资_index
+
+    return 地区,岗位个数,PM_title_words,分地区_平均薪资_index,分地区_平均薪资_values
 
 
-    return 地区,岗位个数,PM_title_words
+from pyecharts.charts import Map
+def map_chart(地区,岗位个数) -> Map:
+    import time
+    time.localtime()
+    output_time = str(time.localtime().tm_year) + '-' \
+                  + str(time.localtime().tm_mon) + '-' \
+                  + str(time.localtime().tm_mday) + '_' \
+                  + str(time.localtime().tm_hour) + ':' \
+                  + str(time.localtime().tm_min)
+    output_time
+    city_name = request.form.get('city_name')
+    job_name = request.form.get('job_name')
 
+    c = (
+        Map()
+        .add(city_name, [list(z) for z in zip(地区, 岗位个数)], city_name)
+        .set_global_opts(
+            title_opts=opts.TitleOpts(title=city_name+job_name+"岗位地区分布"+"数据获取时间:"+output_time), visualmap_opts=opts.VisualMapOpts()
+        )
+    )
+    return c
 
-#  词云图
 def word_chart(PM_title_words)->WordCloud():
+    import time
+    time.localtime()
+    output_time = str(time.localtime().tm_year) + '-' \
+                  + str(time.localtime().tm_mon) + '-' \
+                  + str(time.localtime().tm_mday) + '_' \
+                  + str(time.localtime().tm_hour) + ':' \
+                  + str(time.localtime().tm_min)
+    output_time
     job_name = request.form.get('job_name')
     city_name = request.form.get('city_name')
     d = (
         WordCloud()
         .add("", PM_title_words, word_size_range=[20, 100], shape=SymbolType.DIAMOND)
-        .set_global_opts(title_opts=opts.TitleOpts(title=city_name+job_name + "热门岗位词云图/"+"数据获取时间："))
+        .set_global_opts(title_opts=opts.TitleOpts(title=city_name+job_name + "热门岗位词云图/"+"数据获取时间："+output_time))
     )
     return d
 
+def mid_chart(分地区_平均薪资_index,分地区_平均薪资_values)->WordCloud():
+    import time
+    time.localtime()
+    output_time = str(time.localtime().tm_year) + '-' \
+                  + str(time.localtime().tm_mon) + '-' \
+                  + str(time.localtime().tm_mday) + '_' \
+                  + str(time.localtime().tm_hour) + ':' \
+                  + str(time.localtime().tm_min)
+    output_time
+    job_name = request.form.get('job_name')
+    city_name = request.form.get('city_name')
+    my_string = '                                      '
+    h = (
+        Bar()
+        .add_xaxis([i.split('-')[1] for i in 分地区_平均薪资_index[1:]])
+        .add_yaxis("地区", 分地区_平均薪资_values[1:])
+        .set_global_opts(
+            title_opts=opts.TitleOpts(title=city_name+job_name+"各地区平均薪资"+"单位:k"+my_string+"数据获取时间:"+output_time),
+            brush_opts=opts.BrushOpts(),
+        )
 
+    )
+    return h
 
-@app.route("/",methods = ['POST','GET'])
-def index():
-    if request.method == 'POST':
-        job_name = request.form.get('job_name')
-        city_name = request.form.get('city_name')
-        return redirect(url_for('tubiao',job_name = job_name,city_name = city_name))
-    return render_template("index.html")
-
-@app.route("/tubiao",methods = ['GET','POST'])
-def tubiao():
-        # job_name = request.args.get('job_name')
-        # city_name = request.args.get('city_name')
-        # _, _, PM_title_words = get_data(job_name, city_name)
-        # d_content = word_chart(PM_title_words)
-        # word_render_chart = d_content.render_embed()
-        return render_template('tubiao.html')
-# , chart=word_render_chart
+@app.route("/")
+def index_boot():
+    return render_template("index_bootstrap.html")
 
 @app.route('/api/data', methods=['GET'])
-def get_data():
+def get_api_data():
     data = {'message': 'This is data from Flask!'}
     return jsonify(data)
+
+
+@app.route('/word', methods=['POST'])
+
+def word():
+    job_name = request.form.get('job_name')
+    city_name = request.form.get('city_name')
+    from markupsafe import Markup
+    _, _, PM_title_words,_, _,= get_data(job_name, city_name)
+    d = word_chart(PM_title_words)
+    return Markup(d.render_embed())
+
+@app.route('/map', methods=['POST'])
+def map():
+    job_name = request.form.get('job_name')
+    city_name = request.form.get('city_name')
+    from markupsafe import Markup
+    地区, 岗位个数,_,_, _, = get_data(job_name, city_name)
+    print(地区, 岗位个数)
+    f = map_chart(地区, 岗位个数)
+    return Markup(f.render_embed())
+
+
+@app.route('/mid', methods=['POST'])
+def mid():
+    job_name = request.form.get('job_name')
+    city_name = request.form.get('city_name')
+    from markupsafe import Markup
+    _,_, _, 分地区_平均薪资_index,分地区_平均薪资_values= get_data(job_name, city_name)
+    data = {'地区': 分地区_平均薪资_index, '平均薪资': 分地区_平均薪资_values}
+    return jsonify(data)
+#@app.route('/index')
+#def index():
+ #   from markupsafe import Markup
+ #   地区,岗位个数 = get_data("产品经理", "广州")
+  #  print(地区,岗位个数)
+ #   c = map_chart(地区, 岗位个数)
+ #   return Markup(c.render_embed())
+
+
+
+# @app.route("/mapchart")
+# def indexxx():
+#     c = map_chart()
+#     return c.dump_options_with_quotes()
+
+@app.route("/tubiao")
+def tubiao():
+   return render_template("tubiao.html")
+
+
+# idx = 9
+
+
+# @app.route("/lineDynamicData")
+# def update_line_data():
+#     global idx
+#     idx = idx + 1
+#     return jsonify({"name": idx, "value": randrange(50, 80)})
+
 
 if __name__ == "__main__":
     app.run()

@@ -4,7 +4,7 @@ import { RouterModule } from '@angular/router';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [HomeComponent,RouterModule],
+  imports: [HomeComponent, RouterModule],
  template: `
 <!--    <a [routerLink]="['/nihao']">-->
 <!--      <header class="brand-name">-->
@@ -36,6 +36,7 @@ import { RouterModule } from '@angular/router';
     <section class="content">
       <router-outlet></router-outlet>
     </section>
+
 `,
   styleUrls: ['./app.component.css'],
 })
