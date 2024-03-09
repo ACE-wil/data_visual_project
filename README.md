@@ -1,5 +1,9 @@
 # 大学生求职数据可视化项目
 
+## 视频介绍
+[跳转到B站页面](https://www.bilibili.com/video/BV1XK421s7Kt/?share_source=copy_web&vd_source=1ec1b980aaf2653d4c7b54f6d4acdd51)
+
+
 > 本项目总共有8个主要模块，包括**首页、求职、校招、内推、看房、理财、职业规划、关于**。
 
 * 首页 介绍了主要的三大板块，求职、看房、理财，图片如下：
