@@ -8,7 +8,7 @@ describe('EchartsChartComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [EchartsChartComponent]
+      declarations: [EchartsChartComponent],
     });
     fixture = TestBed.createComponent(EchartsChartComponent);
     component = fixture.componentInstance;

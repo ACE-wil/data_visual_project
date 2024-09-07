@@ -1,0 +1,224 @@
+<div class="the_form">
+  <form class="the_Sumit_form">
+    <div
+      style="
+        box-shadow:
+          rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
+          rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+        position: fixed;
+        left: 270px;
+        width: 1230px;
+        top: 0;
+        height: 80px;
+        background-image: linear-gradient(
+          to right top,
+          #9290ee,
+          #9593ed,
+          #9795ec,
+          #9a98eb,
+          #9c9aea,
+          #9f9dea,
+          #a19fe9,
+          #a4a2e9,
+          #a8a6e9,
+          #abaae9,
+          #afaee8,
+          #b3b2e8
+        );
+      "></div>
+    <div
+      style="
+        position: fixed;
+        left: 630px;
+        font-size: 30px;
+        top: 20px;
+        color: white;
+        letter-spacing: 7px;
+        font-family: 'Microsoft JhengHei UI';
+        font-weight: bold;
+      ">
+      地区
+    </div>
+    <input
+      class="niu_where"
+      name="niu_where"
+      placeholder="请输入地区"
+      [(ngModel)]="sch_model.sch_where"
+      style="
+        position: fixed;
+        top: 4px;
+        outline: white;
+        border: white;
+        left: 730px;
+        width: 300px;
+        height: 50px;
+        top: 15px;
+      " />
+    <button
+      type="submit"
+      role="SumitButton"
+      class="SubmitButton"
+      id="SubmitButton"
+      (click)="Sch_data_request()"
+      style="
+        position: fixed;
+        left: 1080px;
+        top: 20px;
+        height: 40px;
+        width: 80px;
+        border-radius: 20px;
+        border: 0;
+        background-color: white;
+        letter-spacing: 2px;
+        font-family: 'Microsoft JhengHei UI';
+      ">
+      查询
+    </button>
+  </form>
+  <div
+    *ngIf="!sch_data"
+    style="
+      position: absolute;
+      left: 400px;
+      top: 380px;
+      font-size: 30px;
+      display: none;
+      font-family: 'Microsoft JhengHei UI';
+    ">
+    正在加载中····(等你提交呢嗯)
+  </div>
+  <div class="lds-ellipsis">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+  <div class="xiaozhao_sch xiaozhao_sliding" *ngIf="!loading">
+    <!--     导航栏-->
+    <div
+      *ngIf="sch_data"
+      class="the_navigations"
+      style="
+        position: absolute;
+        top: -50px;
+        padding-top: 15px;
+        text-align: center;
+        width: 100%;
+        height: 60px;
+        background-color: rgb(108, 189, 130);
+        z-index: 3;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        color: white;
+        font-size: 30px;
+        box-shadow:
+          rgba(0, 0, 0, 0.07) 0px 1px 1px,
+          rgba(0, 0, 0, 0.07) 0px 2px 2px,
+          rgba(0, 0, 0, 0.07) 0px 4px 4px,
+          rgba(0, 0, 0, 0.07) 0px 8px 8px,
+          rgba(0, 0, 0, 0.07) 0px 16px 16px;
+        letter-spacing: 10px;
+        font-family: 'Microsoft JhengHei UI';
+        font-weight: bold;
+      ">
+      校招日历
+    </div>
+
+    <!--    每个遍历盒子大小-->
+    <div
+      *ngFor="let item of sch_data"
+      style="
+        box-shadow: rgba(53, 32, 136, 0.56) 0px 5px 15px;
+        width: 250px;
+        position: relative;
+        left: 30px;
+        height: 140px;
+        background-color: #b5b4e3;
+        border-radius: 5px;
+        float: left;
+        margin: 10px;
+        top: 30px;
+      ">
+      <div
+        style="
+          position: relative;
+          top: 0;
+          height: 56px;
+          width: 100%;
+          border-radius: 5px;
+          background-color: #b5b4e3;
+        ">
+        <div style="float: left">
+          <img
+            src="{{ item['公司LOGO'] }}"
+            style="
+              position: relative;
+              width: 45px;
+              height: 45px;
+              left: 10px;
+              top: 10px;
+            " />
+        </div>
+        <div
+          style="
+            text-align: center;
+            position: absolute;
+            color: white;
+            height: 70px;
+            align-items: center;
+            line-height: 1.5;
+            display: flex;
+            justify-content: center;
+            width: 165px;
+            left: 70px;
+            word-wrap: break-word;
+            font-size: 20px;
+            padding-right: 30px;
+            padding-bottom: 30px;
+          ">
+          {{ item['公司名称'] }}
+        </div>
+      </div>
+
+      <div
+        style="
+          background-color: white;
+          position: absolute;
+          top: 70px;
+          width: 100%;
+          border-radius: 5px;
+        ">
+        <div
+          style="
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            height: 70px;
+          ">
+          <span
+            style="
+              font-size: 18px;
+              margin-left: 10px;
+              padding-top: 10px;
+              position: relative;
+              top: 5px;
+            "
+            >招聘城市：{{ item['招聘城市'] }}</span
+          >
+          <br />
+          <span
+            style="
+              font-size: 16px;
+              margin-left: 10px;
+              position: absolute;
+              bottom: 10px;
+            "
+            >网申日期：{{ item['网申日期'] }}</span
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--  <div style="position: absolute;left: 260px;width: 1000px;height: 800px;background-color: yellow"><div *ngIf="sch_data" style="position: absolute;left: 260px;top: 200px;width: 500px;height: 500px">{{sch_data}}</div>-->
+  <!--</div>-->
+</div>

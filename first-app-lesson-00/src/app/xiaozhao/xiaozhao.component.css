@@ -1,0 +1,166 @@
+.SubmitButton {
+  background-color: #c2fbd7;
+  border-radius: 100px;
+  box-shadow:
+    rgba(108, 72, 206, 0.2) 0 -25px 18px -14px inset,
+    rgba(100, 66, 210, 0.15) 0 1px 2px,
+    rgba(112, 78, 187, 0.15) 0 2px 4px,
+    rgba(86, 52, 129, 0.15) 0 4px 8px,
+    rgba(44, 187, 99, 0.15) 0 8px 16px,
+    rgba(44, 187, 99, 0.15) 0 16px 32px;
+  color: #9e89ff;
+  cursor: pointer;
+  display: inline-block;
+  font-family:
+    CerebriSans-Regular,
+    -apple-system,
+    system-ui,
+    Roboto,
+    sans-serif;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.SubmitButton:hover {
+  box-shadow:
+    rgba(72, 139, 227, 0.35) 0 -25px 18px -14px inset,
+    rgba(71, 170, 201, 0.25) 0 1px 2px,
+    rgba(91, 103, 210, 0.25) 0 2px 4px,
+    rgba(40, 105, 246, 0.28) 0 4px 8px,
+    rgba(44, 187, 99, 0.25) 0 8px 16px,
+    rgba(44, 187, 99, 0.25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+}
+.SubmitButton:active {
+  transform: scale(0.9);
+}
+.niu_where {
+  border-radius: 5px;
+  transition: 0.7s;
+}
+.niu_where:hover {
+  scale: 1.1;
+  border-radius: 15px;
+}
+
+.the_Sumit_form {
+  z-index: 5;
+}
+.xiaozhao_sch {
+  position: absolute;
+  background-color: #ffffff;
+  top: 150px;
+  width: auto;
+  left: 50px;
+  right: 50px;
+  height: auto;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding-bottom: 70px;
+  z-index: 4;
+}
+
+input::placeholder {
+  position: absolute;
+  left: 10px;
+}
+
+input {
+  padding-left: 10px;
+}
+
+.lds-ellipsis {
+  display: inline-block;
+  position: absolute;
+  left: 460px;
+  width: 300px;
+  height: 300px;
+  top: 270px;
+  z-index: 3;
+}
+
+.lds-ellipsis div {
+  position: absolute;
+  top: 33px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #b39afc;
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+
+.lds-ellipsis div:nth-child(1) {
+  left: 46px;
+  animation: lds-ellipsis1 1.5s infinite;
+}
+
+.lds-ellipsis div:nth-child(2) {
+  left: 106px;
+  animation: lds-ellipsis2 1.5s infinite;
+}
+
+.lds-ellipsis div:nth-child(3) {
+  left: 166px;
+  animation: lds-ellipsis2 1.5s infinite;
+}
+
+.lds-ellipsis div:nth-child(4) {
+  left: 226px;
+  animation: lds-ellipsis3 1.5s infinite;
+}
+
+@keyframes lds-ellipsis1 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes lds-ellipsis3 {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+
+@keyframes lds-ellipsis2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(24px, 0);
+  }
+}
+
+.the_form {
+  position: absolute;
+  left: 260px;
+  right: 20px;
+  width: auto;
+  height: 100%;
+}
+
+@media screen and (max-aspect-ratio: 9/16) {
+  .the_navigations {
+    display: none;
+  }
+  .the_form {
+    left: 10px;
+    width: 100px;
+    top: -150px;
+    z-index: 0;
+  }
+  .the_Sumit_form {
+    display: none;
+  }
+}

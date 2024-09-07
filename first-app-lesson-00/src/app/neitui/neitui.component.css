@@ -1,0 +1,142 @@
+.icon:hover {
+  scale: 1.1;
+}
+img:hover {
+  scale: 1.1;
+}
+/*.content_text{*/
+/*  transition: 1s;*/
+/*}*/
+/*.content_text:hover{*/
+/*  scale: 1.1;*/
+/*}*/
+.user_name {
+  transition: 1s;
+}
+.user_job {
+  transition: 1s;
+}
+.user_name:hover {
+  scale: 1.1;
+}
+.user_job:hover {
+  scale: 1.1;
+}
+.commentss {
+  transition: 1s;
+  z-index: 1;
+  background-color: white;
+  float: left;
+  margin-left: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 5px;
+  position: relative;
+  width: 600px;
+  height: 130px;
+  margin-bottom: 40px;
+}
+.commentss:hover {
+  scale: 1.1;
+  z-index: 3;
+}
+.the_comments {
+  background-color: rgba(0, 0, 0, 0.07);
+  height: 100%;
+  width: 100%;
+  float: left;
+}
+.content_all {
+  position: absolute;
+  left: 250px;
+  right: 20px;
+  width: 1240px;
+  height: 1000px;
+  top: 50px;
+}
+.content_text {
+  position: absolute;
+  top: 37px;
+  left: 65px;
+  width: 520px;
+  height: 60px;
+  background-color: #e8e8e8;
+  border-radius: 5px;
+  overflow-y: scroll;
+  font-size: 10px;
+}
+.user_job {
+  font-size: 12px;
+  color: rgba(75, 75, 75, 0.74);
+}
+.neitui_title {
+  float: left;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+@media screen and (max-aspect-ratio: 9/16) {
+  .content_all {
+    width: 0;
+  }
+  #sidebar {
+    width: 20%;
+  }
+  .commentss {
+    left: 80px;
+    width: 250px;
+    height: 300px;
+    position: relative;
+  }
+  .decorate_square1 {
+    display: none;
+  }
+  .decorate_square2 {
+    display: none;
+  }
+  .content_text {
+    position: absolute;
+    top: 78px;
+    left: 10px;
+    width: 230px;
+    height: 180px;
+  }
+  .user_job {
+    position: relative;
+    left: -10px;
+    top: -10px;
+  }
+  .neitui_title {
+    position: absolute;
+    left: 60px;
+    top: 10px;
+    width: 180px;
+    height: 60px;
+  }
+  div.neitui_title h3 {
+    font-size: 15px;
+    align-items: center;
+    line-height: 1.5;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    line-height: 60px;
+  }
+  div.publish_time span {
+    left: -130px;
+    position: absolute;
+    top: -30px;
+  }
+  .is_loading {
+    display: none;
+  }
+  .the_comments {
+    position: absolute;
+    left: -160px;
+    top: -50px;
+    width: 300px;
+    height: auto;
+  }
+  .commentss {
+    position: relative;
+    left: 0;
+  }
+}

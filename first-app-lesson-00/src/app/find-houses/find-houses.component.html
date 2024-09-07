@@ -1,0 +1,134 @@
+<div
+  style="
+    position: absolute;
+    left: 260px;
+    height: 1000px;
+    width: 78%;
+    background-color: #ffffff;
+  ">
+  <!--  <div [chart]="Linechart" style="width: 520px;height: 340px;position: absolute;left: 50px;top: 140px"></div>-->
+  <!--  <div [chart]="Piechart" style="width: 520px;height: 340px;position: absolute;left: 610px;top: 140px"></div>-->
+</div>
+
+<div
+  style="
+    border-radius: 10px;
+    box-shadow:
+      rgba(166, 104, 220, 0.4) 5px 5px,
+      rgba(178, 99, 243, 0.3) 10px 10px,
+      rgba(153, 95, 239, 0.2) 15px 15px,
+      rgba(153, 100, 248, 0.1) 20px 20px,
+      rgba(240, 46, 170, 0.05) 25px 25px;
+    background-color: #9f9dea;
+    width: 1230px;
+    position: absolute;
+    top: 10px;
+    left: 260px;
+    height: 80px;
+  ">
+  <form>
+    <label
+      for="gz_where"
+      style="
+        color: white;
+        font-size: 30px;
+        margin-left: 295px;
+        top: 20px;
+        position: absolute;
+      "
+      >广州</label
+    >
+    <select
+      name="gz_where"
+      id="gz_where"
+      [(ngModel)]="house_model.gz_where"
+      style="height: 40px; position: absolute; top: 20px; left: 370px">
+      <option *ngFor="let city of gz_city">{{ city }}</option>
+    </select>
+
+    <label
+      for="ren_pri"
+      style="
+        color: #ffffff;
+        font-size: 30px;
+        left: 445px;
+        position: absolute;
+        top: 20px;
+      "
+      >房租：价格/月</label
+    >
+    <select
+      name="ren_pri"
+      id="ren_pri"
+      [(ngModel)]="house_model.ren_pri"
+      style="height: 40px; position: absolute; top: 20px; left: 665px">
+      <option *ngFor="let pri of gz_hous_pri">{{ pri }}</option>
+    </select>
+
+    <button
+      (click)="house_data_request()"
+      class="SubmitButton"
+      style="
+        position: absolute;
+        left: 785px;
+        top: 20px;
+        height: 40px;
+        width: 100px;
+        border-radius: 20px;
+        border: 0;
+        background-color: white;
+      ">
+      查询
+    </button>
+  </form>
+</div>
+<div
+  id="housechart"
+  style="
+    width: 1000px;
+    height: 500px;
+    position: absolute;
+    background-color: yellow;
+    left: 360px;
+    top: 150px;
+  "></div>
+<div
+  id="chart_data"
+  style="
+    width: 1100px;
+    height: auto;
+    position: absolute;
+    background-color: white;
+    left: 25px;
+    top: 600px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  ">
+  <table>
+    <caption>
+      链家网房价数据总表
+    </caption>
+    <thead>
+      <!--  <th>房子图片</th>-->
+      <th>房子标题</th>
+      <th>房子地址</th>
+      <th>房子平方数</th>
+      <th>房子朝向</th>
+      <th>房子规模</th>
+      <th>房子价格</th>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of house_data">
+        <!--    <td><img src="{{item['房子图片']}}"></td>-->
+        <td>{{ item['房子标题'] }}</td>
+        <td>{{ item['房子地址'] }}</td>
+        <td>{{ item['房子平方数'] }}</td>
+        <td>{{ item['房子朝向'] }}</td>
+        <td>{{ item['房子规模'] }}</td>
+        <td>{{ item['房子价格'] }}</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <td colspan="6"></td>
+    </tfoot>
+  </table>
+</div>

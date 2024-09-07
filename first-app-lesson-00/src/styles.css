@@ -1,4 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+/* style.css */
+
+/*@import '~prismjs/themes/prism.css'; !* 使用波浪线表示从node_modules中导入 *!*/
+/*@import 'prismjs/plugins/line-numbers/prism-line-numbers.css'; !* 添加行号样式 *!*/
+/*@import 'prismjs/components/prism-typescript.js'; !* 不再使用 .css 后缀 *!*/
+
 * {
   margin: 0;
   padding: 0;
@@ -8,10 +14,10 @@ body {
   font-family: 'Be Vietnam Pro', sans-serif;
 }
 :root {
-  --primary-color: #605DC8;
-  --secondary-color: #8B89E6;
+  --primary-color: #605dc8;
+  --secondary-color: #8b89e6;
   --accent-color: #e8e7fa;
-  --shadow-color: #E8E8E8;
+  --shadow-color: #e8e8e8;
 }
 
 button.primary {
@@ -20,4 +26,31 @@ button.primary {
   background: var(--primary-color);
   color: white;
   border-radius: 8px;
+}
+/* styles.css 或者你的组件样式文件 */
+
+/* 代码块容器样式 */
+pre {
+  background-color: rgba(0, 0, 0, 0.81);
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 10px;
+  overflow: auto;
+}
+
+/* 代码块样式 */
+code {
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  color: rgba(120, 239, 149, 0.81); /* 代码颜色 */
+  line-height: 1.3;
+}
+
+/* 行号样式（可选，如果使用了行号插件） */
+.line-numbers .line-numbers-rows {
+  border-right: 1px solid #ddd;
+  background-color: rgba(112, 78, 187, 0.15);
+}
+#robot_answer p p {
+  line-height: 20px;
+  font-size: 20px;
 }

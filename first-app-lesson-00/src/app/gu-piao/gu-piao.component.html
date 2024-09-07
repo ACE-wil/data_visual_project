@@ -1,0 +1,31 @@
+<nav id="nav-1" style="position: fixed; left: 42%; z-index: 3">
+  <a
+    class="link-1"
+    [routerLinkActive]="['active']"
+    [routerLinkActiveOptions]="{ exact: true }"
+    [routerLink]="['/gupiao/index']"
+    >首页</a
+  >
+  <a
+    class="link-1"
+    [routerLinkActive]="['active']"
+    [routerLinkActiveOptions]="{ exact: true }"
+    [routerLink]="['/gupiao/jizhang']"
+    >记账</a
+  >
+  <a
+    class="link-1"
+    [routerLinkActive]="['active']"
+    [routerLinkActiveOptions]="{ exact: true }"
+    [routerLink]="['/gupiao/cunqian']"
+    >定期存蓄</a
+  >
+  <a
+    class="link-1"
+    [routerLinkActive]="['active']"
+    [routerLinkActiveOptions]="{ exact: true }"
+    [routerLink]="['/gupiao/touzi']"
+    >投资</a
+  >
+</nav>
+<router-outlet></router-outlet>

@@ -7,7 +7,7 @@
   justify-content: space-around;
 }
 
-input[type="text"] {
+input[type='text'] {
   border: solid 1px var(--primary-color);
   padding: 10px;
   border-radius: 8px;
@@ -15,10 +15,10 @@ input[type="text"] {
   display: inline-block;
   width: 30%;
 }
-td{
+td {
   padding: 40px;
 }
-td{
+td {
   padding: 40px;
 }
 button {
@@ -31,15 +31,111 @@ button {
 
 @media (min-width: 500px) and (max-width: 768px) {
   .results {
-      grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
-  input[type="text"] {
-      width: 70%;
+  input[type='text'] {
+    width: 70%;
   }
 }
 
 @media (max-width: 499px) {
   .results {
-      grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+}
+.img1 {
+  float: left;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  height: 330px;
+  margin: 20px;
+  border-radius: 5px;
+}
+.item_img1 {
+  width: 250px;
+  height: 250px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.img1:hover {
+  opacity: 0.5;
+}
+.img2 {
+  float: left;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  height: 330px;
+  margin: 20px;
+  border-radius: 5px;
+}
+.img2:hover {
+  opacity: 0.5;
+  transform: scale(1.15);
+}
+.img3:hover {
+  opacity: 0.5;
+  transform: scale(1.15);
+}
+
+.primary:hover {
+  opacity: 0.5;
+}
+.item:hover {
+  opacity: 0.5;
+}
+.item1:hover {
+  opacity: 0.5;
+}
+.item2:hover {
+  opacity: 0.5;
+}
+
+.namee:hover {
+  scale: 1.1;
+}
+.icon:hover {
+  scale: 1.1;
+}
+.touxiang:hover {
+  scale: 1.1;
+}
+.the_input {
+  border-radius: 10px;
+  height: 25px;
+  width: 300px;
+}
+
+@media screen and (max-aspect-ratio: 9/16) {
+  .agreatlist {
+    display: none;
+  }
+  .welcome {
+    display: none;
+  }
+  .img1 {
+    scale: 0.8;
+    position: absolute;
+    left: 10%;
+    top: 5%;
+  }
+  .img2 {
+    scale: 0.8;
+    position: absolute;
+    left: 10%;
+    top: 300px;
+  }
+  .img3 {
+    scale: 0.8;
+    position: absolute;
+    left: 10%;
+    top: 600px;
+  }
+
+  .contentee {
+    display: none;
+  }
+  .the_input {
+    width: 90%;
+  }
+  .the_h4 {
+    display: none;
   }
 }

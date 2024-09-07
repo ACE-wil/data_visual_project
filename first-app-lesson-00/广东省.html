@@ -1,0 +1,58 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>广东省</title>
+  </head>
+  <body>
+    <div id="map" style="width: 800px; height: 500px"></div>
+    <script src="https://img.hcharts.cn/highmaps/highmaps.js"></script>
+    <script src="https://data.jianshukeji.com/geochina/guangdong.js"></script>
+    <script>
+      // 随机数据
+      var data = [
+        { name: '广州', value: 18 },
+        { name: '韶关', value: 59 },
+        { name: '深圳', value: 84 },
+        { name: '珠海', value: 67 },
+        { name: '汕头', value: 59 },
+        { name: '佛山', value: 72 },
+        { name: '江门', value: 4 },
+        { name: '湛江', value: 18 },
+        { name: '茂名', value: 62 },
+        { name: '肇庆', value: 51 },
+        { name: '惠州', value: 55 },
+        { name: '梅州', value: 31 },
+        { name: '汕尾', value: 58 },
+        { name: '河源', value: 98 },
+        { name: '阳江', value: 83 },
+        { name: '清远', value: 100 },
+        { name: '东莞', value: 12 },
+        { name: '中山', value: 42 },
+        { name: '东沙群岛', value: 9 },
+        { name: '潮州', value: 3 },
+        { name: '揭阳', value: 55 },
+        { name: '云浮', value: 80 },
+      ];
+      // 初始化图表
+      var map = new Highcharts.Map('map', {
+        title: {
+          text: '广东省',
+        },
+        colorAxis: {
+          min: 0,
+          minColor: 'rgb(255,255,255)',
+          maxColor: '#006cee',
+        },
+        series: [
+          {
+            data: data,
+            name: '随机数据',
+            mapData: Highcharts.maps['cn/guangdong'],
+            joinBy: 'name', // 根据 name 属性进行关联
+          },
+        ],
+      });
+    </script>
+  </body>
+</html>

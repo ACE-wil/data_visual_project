@@ -1,30 +1,439 @@
-<div class="container">
-    <h1>网站表单</h1>
-    <form>
-      <div class="form-group">
-        <label for="job_name">职位名</label>
-          <input type="text" class="form-control" id="job_name" required
-               [(ngModel)]="model.job_name" name="job_name"
-               #name="ngModel" >
-        <div [hidden]="name.valid || name.pristine"
-             class="alert alert-danger">
-          网站名是必需的
-        </div>
+<div class="navvv">
+  <form>
+    <div style="float: left">
+      <label for="job_name" class="label_jobname">职位:</label>
+      <input
+        type="text"
+        style="
+          height: 40px;
+          position: absolute;
+          top: 10px;
+          left: 120px;
+          border-radius: 5px;
+          border: 0;
+        "
+        class="form-control"
+        id="job_name"
+        required
+        [(ngModel)]="model.job_name"
+        name="job_name"
+        #name="ngModel" />
+      <div
+        [hidden]="name.valid || name.pristine"
+        class="alert alert-danger"
+        style="
+          color: rgba(128, 128, 128, 0.55);
+          position: absolute;
+          left: 130px;
+          top: 20px;
+        ">
+        任意职位均可
       </div>
-            <div class="form-group">
-        <label for="city_name">城市名</label>
-          <input type="text" class="form-control" id="city_name" required
-               [(ngModel)]="model.city_name" name="city_name"
-               #name="ngModel" >
-        <div [hidden]="name.valid || name.pristine"
-             class="alert alert-danger">
-          网站名是必需的
-        </div>
-      </div>
-      <button type="submit" class="btn btn-default" (click)="onSubmit()">提交</button>
-    </form>
-  <div *ngIf="responseData">
-  <h2>响应数据</h2>
-  <pre>{{ responseData | json }}</pre>
+    </div>
+    <div
+      style="
+        float: left;
+        position: absolute;
+        height: 80px;
+        left: 310px;
+        top: 10px;
+      ">
+      <label for="city_name" style="color: white; font-size: 30px">城市:</label>
+      <select
+        style="height: 40px; position: absolute; top: 0; left: 80px"
+        id="city_name"
+        name="city_name"
+        [(ngModel)]="model.city_name">
+        <option *ngFor="let city of job_cities" [value]="city">
+          {{ city }}
+        </option>
+      </select>
+    </div>
+    <div
+      style="
+        float: left;
+        position: absolute;
+        height: 60px;
+        left: 450px;
+        top: 10px;
+      ">
+      <label
+        for="wor_exp"
+        style="color: #ffffff; font-size: 30px; padding-left: 20px"
+        >工作经验:</label
+      >
+      <select
+        style="height: 40px; position: absolute; top: 0; left: 160px"
+        id="wor_exp"
+        name="wor_exp"
+        [(ngModel)]="model.wor_exp">
+        <option *ngFor="let wor of wor_exp" [value]="wor">{{ wor }}</option>
+      </select>
+    </div>
+    <div class="lds-ellipsis" *ngIf="loading" style="z-index: 8">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <button
+      type="submit"
+      role="SumitButton"
+      class="SubmitButton"
+      id="SubmitButton"
+      (click)="TrySubmit()"
+      style="
+        position: absolute;
+        left: 730px;
+        top: 10px;
+        height: 40px;
+        width: 100px;
+        border-radius: 20px;
+        border: 0;
+        background-color: white;
+      ">
+      提交
+    </button>
+  </form>
+  <div style="position: absolute; left: 930px; top: 16px">
+    <svg
+      t="1697526539283"
+      class="icon"
+      viewBox="0 0 1024 1024"
+      version="1.1"
+      xmlns="http://www.w3.org/2000/svg"
+      p-id="1668"
+      width="30"
+      height="30">
+      <path
+        d="M817 256h-13.3L524.3 535.4c-4.1 4.1-8.8 4.7-11.3 4.7s-7.2-0.6-11.3-4.7L222.3 256H209c-17.3 0-32 14.7-32 32v13.3l279.4 279.4c15.1 15.1 35.2 23.4 56.6 23.4s41.5-8.3 56.6-23.4L849 301.3V288c0-17.3-14.7-32-32-32z"
+        fill="#E04DFF"
+        p-id="1669"></path>
+      <path
+        d="M817 256c17.3 0 32 14.7 32 32v448c0 17.3-14.7 32-32 32H209c-17.3 0-32-14.7-32-32V288c0-17.3 14.7-32 32-32h608m0-64H209c-52.8 0-96 43.2-96 96v448c0 52.8 43.2 96 96 96h608c52.8 0 96-43.2 96-96V288c0-52.8-43.2-96-96-96z"
+        fill="#691FFF"
+        p-id="1670"></path>
+    </svg>
+  </div>
+  <div style="position: absolute; left: 980px; top: 19px">
+    <svg
+      t="1697526978005"
+      class="icon"
+      viewBox="0 0 1024 1024"
+      version="1.1"
+      xmlns="http://www.w3.org/2000/svg"
+      p-id="3661"
+      width="22"
+      height="22">
+      <path
+        d="M979.456 812.032c-4.096-80.896-46.592-156.16-116.224-205.312V380.416c0-130.56-100.864-240.64-233.984-266.752v-5.12C629.248 48.64 576.512 0 512 0S394.752 48.64 394.752 108.544v5.12c-133.12 26.112-233.984 135.68-233.984 266.752v226.304c-69.632 49.152-112.128 123.904-116.224 205.312h116.224v0.512h701.952v-0.512h116.736z"
+        fill="#605DC8"
+        p-id="3662"></path>
+      <path
+        d="M487.424 1024h29.184c76.288 0 139.776-57.344 148.992-131.072H359.424C368.64 967.68 432.64 1024 507.904 1024h-20.48z"
+        fill="#605DC8"
+        p-id="3663"></path>
+    </svg>
+  </div>
+  <div>
+    <img
+      src="../../assets/1.png"
+      class="touxiang"
+      style="
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        left: 1040px;
+        top: 10px;
+      " />
+  </div>
+  <div style="position: absolute; left: 1100px; top: 15px">
+    <svg
+      t="1697546039894"
+      class="icon"
+      viewBox="0 0 1024 1024"
+      version="1.1"
+      xmlns="http://www.w3.org/2000/svg"
+      p-id="2431"
+      width="32"
+      height="32">
+      <path
+        d="M511.913993 607.897867c-52.980346 0-95.983874-43.003528-95.983874-95.983874s43.003528-95.983874 95.983874-95.983874 95.983874 43.003528 95.983874 95.983874S564.894339 607.897867 511.913993 607.897867zM511.913993 479.919368c-17.545439 0-31.994625 14.449185-31.994625 31.994625s14.449185 31.994625 31.994625 31.994625 31.994625-14.449185 31.994625-31.994625S529.631446 479.919368 511.913993 479.919368z"
+        fill="#575B66"
+        p-id="2432"></path>
+      <path
+        d="M630.947757 960.010751c-9.976818 0-19.781623-4.816395-25.802117-13.073072L531.695616 846.309424c-13.589115 0.860071-25.974131 0.860071-39.563245 0l-73.450025 100.456241c-7.912649 10.836889-21.673778 15.653284-34.574836 11.868974-34.574836-9.804804-67.429531-23.393919-97.704015-40.251302-11.69696-6.536536-18.061482-19.609609-15.997312-32.854695l19.26558-123.334117c-9.804804-8.77272-19.093566-18.061482-27.866286-27.866286l-123.334117 19.26558c-13.073072 2.064169-26.318159-4.300353-32.854695-15.997312-16.857383-30.446498-30.446498-63.301193-40.251302-97.876029-3.612296-12.901058 1.032085-26.662187 11.868974-34.574836l100.456241-73.450025c-0.516042-6.880564-0.688056-13.417101-0.688056-19.781623s0.172014-12.901058 0.688056-19.781623l-100.456241-73.450025c-10.836889-7.912649-15.653284-21.673778-11.868974-34.574836 9.804804-34.574836 23.393919-67.429531 40.251302-97.704015 6.536536-11.69696 19.781623-18.061482 32.854695-15.997312l123.334117 19.26558c8.77272-9.804804 18.061482-19.093566 27.866286-27.866286l-19.26558-123.334117c-2.064169-13.245087 4.300353-26.318159 16.169326-32.854695 30.446498-16.857383 63.301193-30.446498 97.704015-40.251302 12.901058-3.612296 26.662187 1.032085 34.574836 11.868974l73.450025 100.456241c13.589115-0.860071 25.802117-0.860071 39.563245 0l73.450025-100.456241c7.912649-10.836889 21.673778-15.48127 34.574836-11.868974 34.402822 9.804804 67.257517 23.393919 97.704015 40.251302 11.69696 6.536536 18.061482 19.609609 15.997312 32.854695l-19.26558 123.334117c9.804804 8.77272 19.093566 18.061482 27.866286 27.694272l123.334117-19.26558c13.073072-2.064169 26.318159 4.300353 32.854695 15.997312 16.857383 30.446498 30.446498 63.301193 40.423316 97.876029 3.612296 12.901058-1.032085 26.662187-11.868974 34.574836L846.309424 492.13237c0.516042 6.880564 0.688056 13.417101 0.688056 19.781623 0 6.364522-0.172014 12.901058-0.688056 19.781623l100.456241 73.450025c10.836889 7.912649 15.48127 21.673778 11.868974 34.574836-9.804804 34.574836-23.393919 67.429531-40.423316 97.876029-6.536536 11.69696-19.437594 18.061482-32.854695 15.997312L762.194524 734.500252c-8.600706 9.804804-18.061482 19.093566-27.866286 27.694272l19.26558 123.334117c2.064169 13.245087-4.300353 26.318159-15.997312 32.854695-30.274483 16.857383-63.129179 30.446498-97.704015 40.251302C636.968251 959.494709 634.044011 960.010751 630.947757 960.010751zM337.147657 872.627583c13.933143 6.70855 28.554342 12.729044 43.51957 17.889467l70.525785-96.499916c6.70855-9.288762 18.061482-14.277171 29.414413-12.901058 20.641693 2.408198 42.143457 2.408198 62.613136 0 11.868974-1.376113 22.705863 3.612296 29.414413 12.901058l70.525785 96.499916c14.965228-5.160423 29.586427-11.180917 43.51957-17.889467l-18.40551-118.345708c-1.720141-11.352931 2.752226-22.877877 11.69696-29.930455 16.341341-13.073072 31.306568-27.866286 44.207626-44.207626 7.224593-8.944734 18.40551-13.589115 29.930455-11.69696l118.345708 18.40551c6.70855-13.933143 12.729044-28.554342 17.889467-43.51957l-96.499916-70.525785c-9.288762-6.70855-14.277171-18.061482-12.901058-29.414413 1.204099-10.320847 1.892155-20.641693 1.892155-31.306568s-0.688056-20.985721-1.892155-31.306568c-1.376113-11.352931 3.612296-22.705863 12.901058-29.414413l96.499916-70.525785c-5.160423-14.965228-11.180917-29.586427-17.889467-43.51957l-118.345708 18.40551c-11.352931 1.720141-22.877877-2.752226-29.930455-11.69696-12.901058-16.169326-27.694272-31.134554-44.207626-44.207626-8.944734-7.224593-13.417101-18.577524-11.69696-29.930455L686.852343 151.372417c-13.933143-6.70855-28.554342-12.729044-43.51957-17.889467l-70.525785 96.499916c-6.70855 9.288762-17.717453 14.449185-29.414413 12.901058-20.469679-2.408198-41.971443-2.408198-62.613136 0-11.524945 1.376113-22.705863-3.612296-29.586427-12.901058l-70.525785-96.499916c-14.965228 5.160423-29.586427 11.180917-43.51957 17.889467l18.40551 118.345708c1.720141 11.352931-2.752226 22.877877-11.69696 29.930455-16.341341 12.901058-31.134554 27.866286-44.207626 44.207626-7.224593 8.944734-18.577524 13.417101-29.930455 11.69696L151.372417 337.147657c-6.70855 13.933143-12.729044 28.554342-17.889467 43.51957l96.499916 70.525785c9.288762 6.70855 14.277171 18.061482 12.901058 29.586427-1.204099 10.148833-1.892155 20.641693-1.892155 31.134554 0 10.664875 0.688056 20.985721 1.892155 31.306568 1.376113 11.524945-3.612296 22.705863-12.901058 29.586427l-96.499916 70.525785c5.160423 14.965228 11.180917 29.586427 17.889467 43.51957l118.345708-18.40551c11.352931-1.720141 22.877877 2.752226 29.930455 11.69696 12.901058 16.341341 27.694272 31.134554 44.207626 44.207626 8.944734 7.224593 13.589115 18.577524 11.69696 29.930455L337.147657 872.627583z"
+        fill="#575B66"
+        p-id="2433"></path>
+    </svg>
+  </div>
 </div>
+<div
+  class="content_all"
+  style="
+    position: absolute;
+    left: 260px;
+    top: 125px;
+    background-color: white;
+    width: 1250px;
+    height: 1100px;
+  ">
+  <div id="chart1">
+    <div
+      style="
+        position: absolute;
+        left: 200px;
+        top: 30px;
+        width: 150px;
+        height: 100px;
+      ">
+      各地区平均薪资图
+    </div>
+    <img
+      src="../../assets/chart_demo.png"
+      style="width: 600px; height: 400px"
+      id="imgg" />
+  </div>
+  <div id="chart2">
+    <img
+      src="../../assets/chart2_demo.png"
+      style="width: 600px; height: 400px"
+      id="imgg" />
+  </div>
+
+  <div id="chart_data" style="display: none">
+    <table>
+      <caption>
+        猎聘职位数据总表
+      </caption>
+      <thead>
+        <th>职位</th>
+        <th>地区</th>
+        <th>薪资</th>
+        <th>学历</th>
+        <th>工作年限</th>
+        <th>公司名称</th>
+        <th>规模</th>
+        <th>职位更新时间</th>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of oriData">
+          <td>{{ item['职位'] }}</td>
+          <td>{{ item['地区'] }}</td>
+          <td>{{ item['薪资'] }}</td>
+          <td>{{ item['学历'] }}</td>
+          <td>{{ item['工作年限'] }}</td>
+          <td>{{ item['公司名称'] }}</td>
+          <td>{{ item['规模'] }}</td>
+          <td>{{ item['职位更新时间'] }}</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <td colspan="8"></td>
+      </tfoot>
+    </table>
+  </div>
+</div>
+<div
+  #mappDiv
+  style="
+    position: absolute;
+    left: 360px;
+    width: 1030px;
+    margin-bottom: 50px;
+    height: 500px;
+    top: 580px;
+  "></div>
+<div
+  [hidden]="this.mapHtml"
+  style="
+    position: absolute;
+    left: 360px;
+    width: 1030px;
+    margin-bottom: 50px;
+    height: 500px;
+    top: 580px;
+  ">
+  <img src="assets/gz-map.png" style="width: 100%; height: 100%; z-index: 3" />
+  <div
+    class="loadings"
+    id="loadings"
+    style="
+      width: 100%;
+      height: 100%;
+      background-color: white;
+      z-index: 6;
+      position: absolute;
+      top: 0;
+      left: 0;
+    ">
+    <div
+      class="loader"
+      style="
+        position: absolute;
+        left: 450px;
+        top: 200px;
+        z-index: 7;
+        opacity: 1;
+      "></div>
+  </div>
+</div>
+
+<div
+  #TreeDiv
+  style="
+    position: absolute;
+    left: 360px;
+    width: 1030px;
+    margin-bottom: 50px;
+    height: 500px;
+    top: 1080px;
+  "></div>
+<div
+  [hidden]="this.treeHtml"
+  style="
+    position: absolute;
+    left: 360px;
+    width: 1030px;
+    margin-bottom: 50px;
+    height: 500px;
+    top: 1180px;
+  ">
+  <img src="assets/tree.png" style="width: 100%; height: 100%; z-index: 3" />
+  <div
+    class="loadings"
+    id="loadingss"
+    style="
+      width: 100%;
+      height: 100%;
+      background-color: white;
+      z-index: 6;
+      position: absolute;
+      top: 0;
+      left: 0;
+    ">
+    <div
+      class="loaders"
+      style="
+        position: absolute;
+        left: 510px;
+        top: 230px;
+        z-index: 7;
+        opacity: 1;
+      "></div>
+  </div>
+</div>
+
+<div
+  #wordDiv
+  style="
+    position: absolute;
+    left: 360px;
+    width: 1030px;
+    margin-bottom: 50px;
+    height: 500px;
+    top: 1080px;
+  "></div>
+<div
+  [hidden]="this.wordHtml"
+  style="
+    position: absolute;
+    left: 360px;
+    width: 1030px;
+    margin-bottom: 50px;
+    height: 500px;
+    top: 1780px;
+  ">
+  <img src="assets/word.png" style="width: 100%; height: 100%; z-index: 3" />
+  <div
+    class="loadings3"
+    id="loadingss3"
+    style="
+      width: 100%;
+      height: 100%;
+      background-color: white;
+      z-index: 6;
+      position: absolute;
+      top: 0;
+      left: 0;
+    ">
+    <div
+      class="loaders3"
+      style="
+        position: absolute;
+        left: 510px;
+        top: 230px;
+        z-index: 7;
+        opacity: 1;
+      "></div>
+  </div>
+</div>
+
+<div class="the_mobile">
+  <div class="navvv_mobile">
+    <form>
+      <label for="job_name" class="label_jobname">职位:</label>
+      <input
+        type="text"
+        class="form-control textcontrol"
+        id="job_name"
+        required
+        [(ngModel)]="model.job_name"
+        name="job_name"
+        #name="ngModel"
+        style="width: 100px" />
+      <div
+        [hidden]="name.valid || name.pristine"
+        class="alert alert-danger input_tips">
+        任意职位均可
+      </div>
+
+      <div style="position: absolute; left: 30px; top: 60px">
+        <label for="city_name" class="label_cityname">城市:</label>
+        <select
+          class="select_cityname"
+          id="city_name"
+          name="city_name"
+          [(ngModel)]="model.city_name">
+          <option *ngFor="let city of job_cities" [value]="city">
+            {{ city }}
+          </option>
+        </select>
+      </div>
+
+      <div style="position: absolute; left: 9px; top: 108px">
+        <label for="wor_exp" class="label_worexp">工作经验:</label>
+        <select
+          class="select_exp"
+          id="wor_exp"
+          name="wor_exp"
+          [(ngModel)]="model.wor_exp">
+          <option *ngFor="let wor of wor_exp" [value]="wor">{{ wor }}</option>
+        </select>
+      </div>
+      <br />
+      <button
+        type="submit"
+        role="SumitButton"
+        class="SubmitButton"
+        id="SubmitButton"
+        (click)="TrySubmit2()">
+        提交
+      </button>
+    </form>
+  </div>
+  <div class="all_chart" style="position: absolute; left: 20%; top: 300px">
+    <div id="chart3" style="width: 300px; height: 200px">
+      <img
+        src="../../assets/chart_demo.png"
+        style="width: 100%; height: 100%"
+        id="imgg" />
+    </div>
+    <div id="chart4" style="width: 300px; height: 400px; top: 30%">
+      <img
+        src="../../assets/chart2_demo.png"
+        style="width: 100%; height: 100%"
+        id="imgg" />
+    </div>
+  </div>
 </div>

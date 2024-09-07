@@ -1,0 +1,47 @@
+header {
+  text-align: center;
+  padding: 20px 0;
+}
+section {
+  margin: 20px 0;
+}
+.github,
+.gitee,
+.wechat,
+.github2 {
+  padding: 12px 0px 12px 6px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+  height: 30px;
+  font-size: 12px;
+}
+
+.github {
+  background-color: #f9f9f9;
+}
+
+.gitee {
+  background-color: #f2f2f2;
+}
+
+.wechat {
+  background-color: #e6e6e6;
+}
+.wechat img {
+  opacity: 0;
+}
+.wechat:hover img {
+  opacity: 1;
+}
+.github2 {
+  background-color: #dbdbdb;
+}
+.sidebar {
+  position: fixed;
+  right: 10px;
+  width: 80px;
+  font-size: 15px;
+  height: auto;
+  top: 15%;
+}

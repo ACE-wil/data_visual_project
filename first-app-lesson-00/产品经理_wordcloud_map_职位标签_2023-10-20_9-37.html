@@ -1,2953 +1,2958 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Awesome-pyecharts</title>
-                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
-            <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts-wordcloud.min.js"></script>
-
-</head>
-<body >
-    <div id="827d61f6a650419f8508d3109c8bf39f" class="chart-container" style="width:900px; height:500px; "></div>
+    <script
+      type="text/javascript"
+      src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://assets.pyecharts.org/assets/v5/echarts-wordcloud.min.js"></script>
+  </head>
+  <body>
+    <div
+      id="827d61f6a650419f8508d3109c8bf39f"
+      class="chart-container"
+      style="width: 900px; height: 500px"></div>
     <script>
-        var chart_827d61f6a650419f8508d3109c8bf39f = echarts.init(
-            document.getElementById('827d61f6a650419f8508d3109c8bf39f'), 'white', {renderer: 'canvas'});
-        var option_827d61f6a650419f8508d3109c8bf39f = {
-    "animation": true,
-    "animationThreshold": 2000,
-    "animationDuration": 1000,
-    "animationEasing": "cubicOut",
-    "animationDelay": 0,
-    "animationDurationUpdate": 300,
-    "animationEasingUpdate": "cubicOut",
-    "animationDelayUpdate": 0,
-    "aria": {
-        "enabled": false
-    },
-    "color": [
-        "#5470c6",
-        "#91cc75",
-        "#fac858",
-        "#ee6666",
-        "#73c0de",
-        "#3ba272",
-        "#fc8452",
-        "#9a60b4",
-        "#ea7ccc"
-    ],
-    "series": [
-        {
-            "type": "wordCloud",
-            "shape": "diamond",
-            "rotationRange": [
-                0,
-                0
-            ],
-            "rotationStep": 45,
-            "girdSize": 20,
-            "sizeRange": [
-                20,
-                100
-            ],
-            "data": [
-                {
-                    "name": "\u5bf9\u8d26\u7ba1\u7406",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(24,97,39)"
-                    }
-                },
-                {
-                    "name": "\u8d22\u52a1\u4ea7\u54c1",
-                    "value": 2,
-                    "textStyle": {
-                        "color": "rgb(77,97,88)"
-                    }
-                },
-                {
-                    "name": "\u5efa\u7b51\u4fe1\u606f\u5316",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(20,66,45)"
-                    }
-                },
-                {
-                    "name": "\u7cbe\u51c6\u533b\u7597",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(16,0,23)"
-                    }
-                },
-                {
-                    "name": "\u4fe1\u7528\u5361\u4e1a\u52a1",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(19,120,78)"
-                    }
-                },
-                {
-                    "name": "Redis",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(7,130,76)"
-                    }
-                },
-                {
-                    "name": "\u4ea7\u54c1\u8bbe\u8ba1",
-                    "value": 124,
-                    "textStyle": {
-                        "color": "rgb(83,8,102)"
-                    }
-                },
-                {
-                    "name": "\u4fe1\u606f\u5316\u9879\u76ee",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(58,3,158)"
-                    }
-                },
-                {
-                    "name": "\u6c7d\u8f66\u96f6\u90e8\u4ef6",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(45,44,129)"
-                    }
-                },
-                {
-                    "name": "OA\u7cfb\u7edf",
-                    "value": 4,
-                    "textStyle": {
-                        "color": "rgb(139,18,155)"
-                    }
-                },
-                {
-                    "name": "Axure",
-                    "value": 25,
-                    "textStyle": {
-                        "color": "rgb(42,32,7)"
-                    }
-                },
-                {
-                    "name": "\u91d1\u878d\u7406\u8d22/\u8d37\u6b3e",
-                    "value": 4,
-                    "textStyle": {
-                        "color": "rgb(108,53,95)"
-                    }
-                },
-                {
-                    "name": "\u533b\u836f\u4f01\u4e1a",
-                    "value": 2,
-                    "textStyle": {
-                        "color": "rgb(94,94,158)"
-                    }
-                },
-                {
-                    "name": "\u753b\u50cf\u4ea7\u54c1",
-                    "value": 2,
-                    "textStyle": {
-                        "color": "rgb(69,122,44)"
-                    }
-                },
-                {
-                    "name": "\u5b89\u5168\u4ea7\u54c1",
-                    "value": 2,
-                    "textStyle": {
-                        "color": "rgb(156,75,135)"
-                    }
-                },
-                {
-                    "name": "\u5927\u6570\u636e\u5e73\u53f0",
-                    "value": 2,
-                    "textStyle": {
-                        "color": "rgb(57,14,150)"
-                    }
-                },
-                {
-                    "name": "\u8bed\u8a00\u6559\u80b2",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(155,127,94)"
-                    }
-                },
-                {
-                    "name": "\u751f\u547d\u5468\u671f\u7ba1\u7406",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(137,8,94)"
-                    }
-                },
-                {
-                    "name": "\u9500\u552e\u8fd0\u8425",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(22,6,42)"
-                    }
-                },
-                {
-                    "name": "\u7ee9\u6548\u7ba1\u7406",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(22,131,18)"
-                    }
-                },
-                {
-                    "name": "\u6280\u672f\u652f\u6301",
-                    "value": 2,
-                    "textStyle": {
-                        "color": "rgb(124,90,122)"
-                    }
-                },
-                {
-                    "name": "\u75ab\u82d7",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(147,67,52)"
-                    }
-                },
-                {
-                    "name": "\u5916\u6c47\u7ba1\u7406",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(140,40,116)"
-                    }
-                },
-                {
-                    "name": "\u62d3\u5c55\u57f9\u8bad",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(76,123,156)"
-                    }
-                },
-                {
-                    "name": "IT/\u4e92\u8054\u7f51/\u8f6f\u4ef6",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(100,72,45)"
-                    }
-                },
-                {
-                    "name": "Oracle",
-                    "value": 2,
-                    "textStyle": {
-                        "color": "rgb(138,90,87)"
-                    }
-                },
-                {
-                    "name": "\u667a\u80fd\u5bb6\u5c45",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(153,107,4)"
-                    }
-                },
-                {
-                    "name": "Visio",
-                    "value": 8,
-                    "textStyle": {
-                        "color": "rgb(85,115,113)"
-                    }
-                },
-                {
-                    "name": "\u91d1\u878d\u4ea7\u54c1\u7ecf\u7406",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(132,74,16)"
-                    }
-                },
-                {
-                    "name": "\u75db\u70b9\u6316\u6398",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(13,149,30)"
-                    }
-                },
-                {
-                    "name": "\u901a\u8baf/\u7f51\u7edc\u8bbe\u5907",
-                    "value": 4,
-                    "textStyle": {
-                        "color": "rgb(133,88,131)"
-                    }
-                },
-                {
-                    "name": "\u79fb\u52a8\u7aef\u4ea7\u54c1",
-                    "value": 21,
-                    "textStyle": {
-                        "color": "rgb(113,39,72)"
-                    }
-                },
-                {
-                    "name": "\u5ba0\u7269\u533b\u7597",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(68,8,75)"
-                    }
-                },
-                {
-                    "name": "\u76f4\u64ad/\u89c6\u9891\u4ea7\u54c1",
-                    "value": 2,
-                    "textStyle": {
-                        "color": "rgb(143,79,141)"
-                    }
-                },
-                {
-                    "name": "\u5f00\u53d1\u5957\u4ef6",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(155,2,62)"
-                    }
-                },
-                {
-                    "name": "\u57ce\u5e02\u7ba1\u5bb6",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(36,3,135)"
-                    }
-                },
-                {
-                    "name": "\u533b\u5b66\u603b\u76d1",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(77,43,66)"
-                    }
-                },
-                {
-                    "name": "\u539f\u578b\u8bbe\u8ba1",
-                    "value": 28,
-                    "textStyle": {
-                        "color": "rgb(69,151,94)"
-                    }
-                },
-                {
-                    "name": "web\u7aef\u4ea7\u54c1",
-                    "value": 13,
-                    "textStyle": {
-                        "color": "rgb(115,65,106)"
-                    }
-                },
-                {
-                    "name": "B2C  ",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(118,121,36)"
-                    }
-                },
-                {
-                    "name": "\u4ea7\u54c1\u89c4\u5212",
-                    "value": 135,
-                    "textStyle": {
-                        "color": "rgb(1,114,54)"
-                    }
-                },
-                {
-                    "name": "APP\u8fed\u4ee3",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(102,125,7)"
-                    }
-                },
-                {
-                    "name": "\u6570\u636e\u6316\u6398",
-                    "value": 2,
-                    "textStyle": {
-                        "color": "rgb(37,130,105)"
-                    }
-                },
-                {
-                    "name": "\u5feb\u6d88\u54c1\u7c7b",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(89,157,20)"
-                    }
-                },
-                {
-                    "name": "\u6570\u5b57\u5316\u9700\u6c42",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(43,3,74)"
-                    }
-                },
-                {
-                    "name": "\u6bcd\u5a74",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(33,115,28)"
-                    }
-                },
-                {
-                    "name": "\u533b\u7597\u5668\u68b0",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(52,15,120)"
-                    }
-                },
-                {
-                    "name": "\u751f\u6d3b\u670d\u52a1",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(8,87,48)"
-                    }
-                },
-                {
-                    "name": "\u641c\u7d22\u4ea7\u54c1",
-                    "value": 3,
-                    "textStyle": {
-                        "color": "rgb(85,74,78)"
-                    }
-                },
-                {
-                    "name": "\u73af\u536b\u4e00\u4f53\u5316",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(56,67,157)"
-                    }
-                },
-                {
-                    "name": ".NET",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(76,102,109)"
-                    }
-                },
-                {
-                    "name": "\u65b0\u96f6\u552e",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(160,79,96)"
-                    }
-                },
-                {
-                    "name": "\u54c1\u724c\u7b56\u5212",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(28,134,65)"
-                    }
-                },
-                {
-                    "name": "\u8d22\u52a1/\u5ba1\u8ba1/\u7a0e\u52a1",
-                    "value": 2,
-                    "textStyle": {
-                        "color": "rgb(34,64,55)"
-                    }
-                },
-                {
-                    "name": "\u4ea7\u54c1\u751f\u547d\u5468\u671f",
-                    "value": 2,
-                    "textStyle": {
-                        "color": "rgb(3,76,0)"
-                    }
-                },
-                {
-                    "name": "CRM\u4ea7\u54c1",
-                    "value": 3,
-                    "textStyle": {
-                        "color": "rgb(29,79,10)"
-                    }
-                },
-                {
-                    "name": "\u4ea7\u54c1\u7b56\u5212",
-                    "value": 3,
-                    "textStyle": {
-                        "color": "rgb(136,94,47)"
-                    }
-                },
-                {
-                    "name": "\u4ea4\u901a/\u8fd0\u8f93",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(101,124,23)"
-                    }
-                },
-                {
-                    "name": "\u5de5\u4e1a\u4e92\u8054\u7f51",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(152,43,78)"
-                    }
-                },
-                {
-                    "name": "API",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(137,101,119)"
-                    }
-                },
-                {
-                    "name": "\u5f71\u50cf\u8bbe\u5907",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(24,31,153)"
-                    }
-                },
-                {
-                    "name": "\u8bfe\u7a0b\u4ea7\u54c1",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(128,23,160)"
-                    }
-                },
-                {
-                    "name": "\u706f\u9970\u7167\u660e",
-                    "value": 2,
-                    "textStyle": {
-                        "color": "rgb(125,50,121)"
-                    }
-                },
-                {
-                    "name": "\u5f00\u53d1\u7ecf\u9a8c",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(70,7,81)"
-                    }
-                },
-                {
-                    "name": "\u533b\u5b66\u7ecf\u7406 ",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(48,144,98)"
-                    }
-                },
-                {
-                    "name": "O2O",
-                    "value": 4,
-                    "textStyle": {
-                        "color": "rgb(121,138,32)"
-                    }
-                },
-                {
-                    "name": "\u7206\u54c1\u6253\u9020",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(41,27,58)"
-                    }
-                },
-                {
-                    "name": "\u9700\u6c42\u5206\u6790",
-                    "value": 52,
-                    "textStyle": {
-                        "color": "rgb(63,52,155)"
-                    }
-                },
-                {
-                    "name": "EHS\u7cfb\u7edf",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(137,94,3)"
-                    }
-                },
-                {
-                    "name": "\u5ba2\u6237\u7ba1\u7406",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(11,61,112)"
-                    }
-                },
-                {
-                    "name": "to B",
-                    "value": 58,
-                    "textStyle": {
-                        "color": "rgb(5,4,85)"
-                    }
-                },
-                {
-                    "name": "H5\u7aef\u4ea7\u54c1",
-                    "value": 2,
-                    "textStyle": {
-                        "color": "rgb(138,120,76)"
-                    }
-                },
-                {
-                    "name": "\u4ea7\u4e1a\u91d1\u878d",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(15,42,115)"
-                    }
-                },
-                {
-                    "name": "\u751f\u7269\u5236\u54c1",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(125,42,79)"
-                    }
-                },
-                {
-                    "name": "\u9700\u6c42\u7ba1\u7406",
-                    "value": 15,
-                    "textStyle": {
-                        "color": "rgb(84,126,101)"
-                    }
-                },
-                {
-                    "name": "OTA",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(26,106,53)"
-                    }
-                },
-                {
-                    "name": "\u589e\u957f\u9ed1\u5ba2",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(73,75,60)"
-                    }
-                },
-                {
-                    "name": "\u552e\u524d\u652f\u6301",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(37,80,143)"
-                    }
-                },
-                {
-                    "name": "\u751f\u7269\u533b\u836f",
-                    "value": 2,
-                    "textStyle": {
-                        "color": "rgb(65,59,41)"
-                    }
-                },
-                {
-                    "name": "\u901a\u4fe1/\u7f51\u7edc\u8bbe\u5907",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(114,72,141)"
-                    }
-                },
-                {
-                    "name": "C\u7aef\u4ea7\u54c1",
-                    "value": 4,
-                    "textStyle": {
-                        "color": "rgb(107,20,93)"
-                    }
-                },
-                {
-                    "name": "\u9502\u7535\u6c60",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(43,67,60)"
-                    }
-                },
-                {
-                    "name": "\u9500\u552e\u7ba1\u7406",
-                    "value": 2,
-                    "textStyle": {
-                        "color": "rgb(151,152,72)"
-                    }
-                },
-                {
-                    "name": "HR\u6a21\u5757",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(64,30,109)"
-                    }
-                },
-                {
-                    "name": "\u91d1\u878d\u884c\u4e1a",
-                    "value": 12,
-                    "textStyle": {
-                        "color": "rgb(21,131,121)"
-                    }
-                },
-                {
-                    "name": "\u4f9b\u5e94\u5546\u7ba1\u7406",
-                    "value": 2,
-                    "textStyle": {
-                        "color": "rgb(45,41,110)"
-                    }
-                },
-                {
-                    "name": "\u65e0\u9500\u552e\u6027\u8d28",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(108,140,160)"
-                    }
-                },
-                {
-                    "name": "PPT",
-                    "value": 2,
-                    "textStyle": {
-                        "color": "rgb(122,27,137)"
-                    }
-                },
-                {
-                    "name": "\u8f66\u8eab\u7535\u5b50\u6a21\u5757",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(104,95,115)"
-                    }
-                },
-                {
-                    "name": "\u6570\u5b57\u5316\u9879\u76ee\u7ba1\u7406",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(124,91,18)"
-                    }
-                },
-                {
-                    "name": "\u6280\u672f\u80cc\u666f",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(75,128,157)"
-                    }
-                },
-                {
-                    "name": "\u4f01\u4e1a\u670d\u52a1\u4ea7\u54c1",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(38,126,37)"
-                    }
-                },
-                {
-                    "name": "\u6d77\u5916\u4ea7\u54c1",
-                    "value": 2,
-                    "textStyle": {
-                        "color": "rgb(125,97,74)"
-                    }
-                },
-                {
-                    "name": "APP\u4ea7\u54c1",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(109,82,40)"
-                    }
-                },
-                {
-                    "name": "\u5e02\u573a\u5b9a\u4f4d\u786e\u5b9a",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(41,74,40)"
-                    }
-                },
-                {
-                    "name": "\u6c9f\u901a\u80fd\u529b",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(77,34,86)"
-                    }
-                },
-                {
-                    "name": "\u7cfb\u7edf",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(113,125,25)"
-                    }
-                },
-                {
-                    "name": "\u5e02\u573a\u7ecf\u7406",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(27,68,142)"
-                    }
-                },
-                {
-                    "name": "\u82f1\u8bed",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(120,85,97)"
-                    }
-                },
-                {
-                    "name": "\u667a\u6167\u57ce\u5e02",
-                    "value": 2,
-                    "textStyle": {
-                        "color": "rgb(83,14,48)"
-                    }
-                },
-                {
-                    "name": "\u7167\u660e\u884c\u4e1a",
-                    "value": 2,
-                    "textStyle": {
-                        "color": "rgb(153,49,101)"
-                    }
-                },
-                {
-                    "name": "\u552e\u540e\u670d\u52a1",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(131,149,90)"
-                    }
-                },
-                {
-                    "name": "\u4fdd\u9669\u4e1a\u52a1",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(78,14,119)"
-                    }
-                },
-                {
-                    "name": "\u667a\u80fd\u5236\u9020",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(13,50,67)"
-                    }
-                },
-                {
-                    "name": "b\u7aef\u4ea7\u54c1",
-                    "value": 3,
-                    "textStyle": {
-                        "color": "rgb(50,154,61)"
-                    }
-                },
-                {
-                    "name": "\u793e\u4ea4\u7f51\u7edc",
-                    "value": 2,
-                    "textStyle": {
-                        "color": "rgb(160,69,52)"
-                    }
-                },
-                {
-                    "name": "\u4ea7\u54c1\u7b56\u7565",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(104,85,60)"
-                    }
-                },
-                {
-                    "name": "\u8ba1\u8d39",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(20,3,73)"
-                    }
-                },
-                {
-                    "name": "\u624b\u6e38",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(70,91,78)"
-                    }
-                },
-                {
-                    "name": "\u4ea7\u54c1\u5b9a\u4e49",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(61,153,143)"
-                    }
-                },
-                {
-                    "name": "\u81ea\u52a8\u5316",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(75,80,15)"
-                    }
-                },
-                {
-                    "name": "\u4ea4\u6613\u4ea7\u54c1",
-                    "value": 8,
-                    "textStyle": {
-                        "color": "rgb(47,25,95)"
-                    }
-                },
-                {
-                    "name": "\u9879\u76ee\u7ba1\u7406",
-                    "value": 4,
-                    "textStyle": {
-                        "color": "rgb(130,62,42)"
-                    }
-                },
-                {
-                    "name": "\u722c\u866b",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(154,149,21)"
-                    }
-                },
-                {
-                    "name": "\u4e59\u65b9\u516c\u53f8\u80cc\u666f",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(12,52,121)"
-                    }
-                },
-                {
-                    "name": "AI",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(17,7,66)"
-                    }
-                },
-                {
-                    "name": "\u5c0f\u7a0b\u5e8f\u4ea7\u54c1",
-                    "value": 7,
-                    "textStyle": {
-                        "color": "rgb(142,149,153)"
-                    }
-                },
-                {
-                    "name": "\u8f6f\u4ef6\u884c\u4e1a",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(69,142,25)"
-                    }
-                },
-                {
-                    "name": "\u4ea7\u54c1\u7ecf\u7406",
-                    "value": 10,
-                    "textStyle": {
-                        "color": "rgb(73,55,23)"
-                    }
-                },
-                {
-                    "name": "\u8f6f\u4f53\u5bb6\u5177",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(55,5,156)"
-                    }
-                },
-                {
-                    "name": "IT\u4e92\u8054\u7f51",
-                    "value": 43,
-                    "textStyle": {
-                        "color": "rgb(124,67,37)"
-                    }
-                },
-                {
-                    "name": "\u4ea7\u54c1\u8425\u9500",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(105,149,114)"
-                    }
-                },
-                {
-                    "name": "\u62db\u8058\u884c\u4e1a",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(67,98,66)"
-                    }
-                },
-                {
-                    "name": "\u5bb6\u7535\u884c\u4e1a",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(71,53,138)"
-                    }
-                },
-                {
-                    "name": "\u4e70\u624b",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(96,91,10)"
-                    }
-                },
-                {
-                    "name": "\u6d41\u7a0b\u8bbe\u8ba1",
-                    "value": 14,
-                    "textStyle": {
-                        "color": "rgb(71,139,89)"
-                    }
-                },
-                {
-                    "name": "\u65e0\u7ebf\u901a\u4fe1\u65b9\u5411",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(95,64,142)"
-                    }
-                },
-                {
-                    "name": "\u5b9e\u6728\u5bb6\u5177",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(47,137,124)"
-                    }
-                },
-                {
-                    "name": "\u94f6\u884c\u56fd\u9645\u4e1a\u52a1",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(150,86,150)"
-                    }
-                },
-                {
-                    "name": "\u67b6\u6784\u8bbe\u8ba1",
-                    "value": 3,
-                    "textStyle": {
-                        "color": "rgb(39,144,3)"
-                    }
-                },
-                {
-                    "name": "\u4e34\u5e8a\u8bd5\u9a8c",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(128,14,48)"
-                    }
-                },
-                {
-                    "name": "SaaS\u7cfb\u7edf",
-                    "value": 3,
-                    "textStyle": {
-                        "color": "rgb(17,112,32)"
-                    }
-                },
-                {
-                    "name": "\u5206\u6790\u751f\u7269\u5b66",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(8,20,129)"
-                    }
-                },
-                {
-                    "name": "\u5efa\u7b51\u8f6f\u4ef6",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(14,140,105)"
-                    }
-                },
-                {
-                    "name": "\u7b7e\u8bc1",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(155,144,143)"
-                    }
-                },
-                {
-                    "name": "\u4ea7\u54c1\u529f\u80fd\u89c4\u5212",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(145,31,96)"
-                    }
-                },
-                {
-                    "name": "\u9700\u6c42\u8c03\u7814",
-                    "value": 11,
-                    "textStyle": {
-                        "color": "rgb(158,37,48)"
-                    }
-                },
-                {
-                    "name": "\u706f\u5177",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(117,92,140)"
-                    }
-                },
-                {
-                    "name": "\u5988\u5988\u7f51 \u5b9d\u5b9d\u7f51",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(72,115,53)"
-                    }
-                },
-                {
-                    "name": "\u4f9b\u5e94\u94fe\u4ea7\u54c1",
-                    "value": 18,
-                    "textStyle": {
-                        "color": "rgb(63,85,109)"
-                    }
-                },
-                {
-                    "name": "\u7269\u4e1a\u670d\u52a1",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(147,43,42)"
-                    }
-                },
-                {
-                    "name": "\u7535\u5546\u4ea7\u54c1\u7ecf\u7406",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(61,118,24)"
-                    }
-                },
-                {
-                    "name": "\u7269\u6d41\u5feb\u9012",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(27,119,53)"
-                    }
-                },
-                {
-                    "name": "\u7814\u8ba8\u4f1a",
-                    "value": 2,
-                    "textStyle": {
-                        "color": "rgb(24,10,80)"
-                    }
-                },
-                {
-                    "name": "\u6570\u636e\u4ed3\u5e93\u642d\u5efa",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(0,157,5)"
-                    }
-                },
-                {
-                    "name": "\u4f4e\u4ee3\u7801",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(142,1,95)"
-                    }
-                },
-                {
-                    "name": "\u7528\u6237\u7814\u7a76",
-                    "value": 80,
-                    "textStyle": {
-                        "color": "rgb(84,104,140)"
-                    }
-                },
-                {
-                    "name": "\u98df\u54c1\u996e\u6599",
-                    "value": 2,
-                    "textStyle": {
-                        "color": "rgb(152,69,70)"
-                    }
-                },
-                {
-                    "name": "\u7b56\u7565\u4ea7\u54c1",
-                    "value": 25,
-                    "textStyle": {
-                        "color": "rgb(120,39,157)"
-                    }
-                },
-                {
-                    "name": "\u793e\u533a/\u793e\u4ea4\u4ea7\u54c1",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(125,45,140)"
-                    }
-                },
-                {
-                    "name": "\u7eff\u8272\u80fd\u6e90",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(57,5,26)"
-                    }
-                },
-                {
-                    "name": "\u53e3\u8154\u5065\u5eb7",
-                    "value": 2,
-                    "textStyle": {
-                        "color": "rgb(110,29,63)"
-                    }
-                },
-                {
-                    "name": "\u5e02\u573a\u5b66\u672f\u63a8\u5e7f",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(99,89,6)"
-                    }
-                },
-                {
-                    "name": "\u4fe1\u606f\u5b89\u5168",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(80,123,36)"
-                    }
-                },
-                {
-                    "name": "\u57f9\u8bad",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(58,4,112)"
-                    }
-                },
-                {
-                    "name": "\u8de8\u5883\u7535\u5546\u884c\u4e1a",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(8,31,113)"
-                    }
-                },
-                {
-                    "name": "\u56e2\u961f\u7ba1\u7406",
-                    "value": 61,
-                    "textStyle": {
-                        "color": "rgb(49,113,32)"
-                    }
-                },
-                {
-                    "name": "\u667a\u6167\u57ce\u7ba1",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(0,65,79)"
-                    }
-                },
-                {
-                    "name": "\u5e02\u573a\u7b56\u5212",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(130,60,158)"
-                    }
-                },
-                {
-                    "name": "\u6d3b\u52a8\u7b56\u5212",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(63,99,36)"
-                    }
-                },
-                {
-                    "name": "\u670d\u52a1\u4e1a",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(113,22,114)"
-                    }
-                },
-                {
-                    "name": "\u73af\u5883\u7c7b\u7535\u5668",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(160,10,119)"
-                    }
-                },
-                {
-                    "name": "\u5f00\u53d1\u8fc7\u7a0b\u8ddf\u8e2a",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(127,94,102)"
-                    }
-                },
-                {
-                    "name": "\u7269\u8d44\u5e73\u53f0",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(9,147,98)"
-                    }
-                },
-                {
-                    "name": "\u4ea4\u901a/\u8fd0\u8f93/\u7269\u6d41",
-                    "value": 3,
-                    "textStyle": {
-                        "color": "rgb(112,99,11)"
-                    }
-                },
-                {
-                    "name": "\u8f7b\u5962\u98ce\u683c",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(152,101,145)"
-                    }
-                },
-                {
-                    "name": "\u6570\u636e\u79d1\u5b66",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(69,56,31)"
-                    }
-                },
-                {
-                    "name": "\u7206\u54c1",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(98,108,77)"
-                    }
-                },
-                {
-                    "name": "\u8ba1\u7b97\u673a\u8f6f\u4ef6",
-                    "value": 16,
-                    "textStyle": {
-                        "color": "rgb(40,138,40)"
-                    }
-                },
-                {
-                    "name": "powerpoint",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(137,58,136)"
-                    }
-                },
-                {
-                    "name": "xmind",
-                    "value": 5,
-                    "textStyle": {
-                        "color": "rgb(138,14,11)"
-                    }
-                },
-                {
-                    "name": "\u4fbf\u5229\u5e97",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(73,97,70)"
-                    }
-                },
-                {
-                    "name": "\u6c7d\u8f66\u5236\u9020",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(95,93,21)"
-                    }
-                },
-                {
-                    "name": "\u62a4\u80a4\u54c1\u5f00\u53d1",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(17,44,66)"
-                    }
-                },
-                {
-                    "name": "HR\u7cfb\u7edf",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(0,74,44)"
-                    }
-                },
-                {
-                    "name": "\u57fa\u7ad9\u786c\u4ef6",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(106,54,57)"
-                    }
-                },
-                {
-                    "name": "\u4ea7\u54c1\u63a8\u5e7f",
-                    "value": 3,
-                    "textStyle": {
-                        "color": "rgb(105,117,11)"
-                    }
-                },
-                {
-                    "name": "\u5316\u5b66",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(141,91,96)"
-                    }
-                },
-                {
-                    "name": "\u65c5\u6e38\u884c\u4e1a",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(109,53,134)"
-                    }
-                },
-                {
-                    "name": "\u4ea7\u54c1\u7ecf\u7406 \u76f8\u673a ",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(4,60,95)"
-                    }
-                },
-                {
-                    "name": "to C",
-                    "value": 31,
-                    "textStyle": {
-                        "color": "rgb(133,2,153)"
-                    }
-                },
-                {
-                    "name": "\u5546\u4e1a\u4ea7\u54c1",
-                    "value": 14,
-                    "textStyle": {
-                        "color": "rgb(116,36,92)"
-                    }
-                },
-                {
-                    "name": "\u97f3\u4e50\u884c\u4e1a",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(48,31,36)"
-                    }
-                },
-                {
-                    "name": "\u6559\u80b2\u8f6f\u4ef6",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(146,3,143)"
-                    }
-                },
-                {
-                    "name": "\u5de5\u4e1a4.0",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(120,37,110)"
-                    }
-                },
-                {
-                    "name": "ERP\u7cfb\u7edf",
-                    "value": 3,
-                    "textStyle": {
-                        "color": "rgb(134,45,158)"
-                    }
-                },
-                {
-                    "name": "\u78b3\u6392\u653e",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(156,138,48)"
-                    }
-                },
-                {
-                    "name": "\u5927\u533a\u7ecf\u7406",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(138,118,90)"
-                    }
-                },
-                {
-                    "name": "\u5e73\u53f0\u4ea7\u54c1",
-                    "value": 16,
-                    "textStyle": {
-                        "color": "rgb(153,125,143)"
-                    }
-                },
-                {
-                    "name": "\u4e34\u5e8a\u9879\u76ee\u7ba1\u7406",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(138,97,23)"
-                    }
-                },
-                {
-                    "name": "\u6444\u50cf\u673a",
-                    "value": 5,
-                    "textStyle": {
-                        "color": "rgb(137,0,143)"
-                    }
-                },
-                {
-                    "name": "\u8282\u80fd\u786c\u4ef6",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(67,9,97)"
-                    }
-                },
-                {
-                    "name": "\u5e02\u573a\u603b\u76d1",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(3,108,113)"
-                    }
-                },
-                {
-                    "name": "\u6570\u5b57\u5316\u8f6c\u578b",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(138,94,13)"
-                    }
-                },
-                {
-                    "name": "\u540e\u53f0\u4ea7\u54c1",
-                    "value": 13,
-                    "textStyle": {
-                        "color": "rgb(94,25,73)"
-                    }
-                },
-                {
-                    "name": "\u589e\u957f\u4ea7\u54c1",
-                    "value": 7,
-                    "textStyle": {
-                        "color": "rgb(115,73,149)"
-                    }
-                },
-                {
-                    "name": "\u8bc4\u4f30\u9879\u76ee\u98ce\u9669",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(19,78,155)"
-                    }
-                },
-                {
-                    "name": "\u5b89\u9632\u673a",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(147,48,147)"
-                    }
-                },
-                {
-                    "name": "\u4ea7\u54c1\u4f01\u5212",
-                    "value": 2,
-                    "textStyle": {
-                        "color": "rgb(19,158,6)"
-                    }
-                },
-                {
-                    "name": "\u667a\u80fd\u786c\u4ef6",
-                    "value": 12,
-                    "textStyle": {
-                        "color": "rgb(125,12,134)"
-                    }
-                },
-                {
-                    "name": "\u57fa\u56e0\u68c0\u6d4b",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(154,39,39)"
-                    }
-                },
-                {
-                    "name": "App\u4ea7\u54c1\u603b\u76d1 \u7f8e\u67da",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(145,80,63)"
-                    }
-                },
-                {
-                    "name": "\u76f2\u76d2",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(120,68,89)"
-                    }
-                },
-                {
-                    "name": "\u8fde\u9501",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(61,62,46)"
-                    }
-                },
-                {
-                    "name": "\u6b27\u7f8e\u98ce\u683c",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(30,100,111)"
-                    }
-                },
-                {
-                    "name": "ETL",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(104,23,41)"
-                    }
-                },
-                {
-                    "name": "\u6570\u636e\u5206\u6790",
-                    "value": 54,
-                    "textStyle": {
-                        "color": "rgb(1,84,51)"
-                    }
-                },
-                {
-                    "name": "SCM",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(150,94,159)"
-                    }
-                },
-                {
-                    "name": "\u667a\u6167\u7167\u660e",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(24,14,31)"
-                    }
-                },
-                {
-                    "name": "\u5546\u54c1\u7ba1\u7406",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(103,67,102)"
-                    }
-                },
-                {
-                    "name": "\u6d88\u8d39\u54c1",
-                    "value": 10,
-                    "textStyle": {
-                        "color": "rgb(141,154,154)"
-                    }
-                },
-                {
-                    "name": "CRM\u8f6f\u4ef6",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(15,156,143)"
-                    }
-                },
-                {
-                    "name": "SRM",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(55,60,86)"
-                    }
-                },
-                {
-                    "name": "\u6e38\u620f",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(114,2,58)"
-                    }
-                },
-                {
-                    "name": "\u7535\u5546",
-                    "value": 2,
-                    "textStyle": {
-                        "color": "rgb(154,64,16)"
-                    }
-                },
-                {
-                    "name": "\u9700\u6c42\u9a8c\u8bc1",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(59,78,122)"
-                    }
-                },
-                {
-                    "name": "\u5927\u5ba2\u6237",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(32,156,38)"
-                    }
-                },
-                {
-                    "name": "\u56fa\u6536\u7cfb\u7edf",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(143,16,62)"
-                    }
-                },
-                {
-                    "name": "\u516c\u53f8\u4fe1\u8d37",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(44,92,31)"
-                    }
-                },
-                {
-                    "name": "visio",
-                    "value": 6,
-                    "textStyle": {
-                        "color": "rgb(105,51,59)"
-                    }
-                },
-                {
-                    "name": "\u4eba\u624d\u670d\u52a1\u4ea7\u54c1",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(24,117,62)"
-                    }
-                },
-                {
-                    "name": "\u533b\u751f",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(89,137,31)"
-                    }
-                },
-                {
-                    "name": "\u5b9a\u4ef7/\u7ade\u4ef7\u4ea7\u54c1",
-                    "value": 4,
-                    "textStyle": {
-                        "color": "rgb(111,115,118)"
-                    }
-                },
-                {
-                    "name": "\u4eba\u4e8b\u7cfb\u7edf",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(110,29,74)"
-                    }
-                },
-                {
-                    "name": "\u9aa8\u79d1\u810a\u67f1\u521b\u4f24\u6216\u7ec4\u7ec7\u4fee\u590d\u76f8\u5173\u4ea7\u54c1",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(130,6,63)"
-                    }
-                },
-                {
-                    "name": "\u56fd\u9645\u7ed3\u7b97",
-                    "value": 2,
-                    "textStyle": {
-                        "color": "rgb(111,141,144)"
-                    }
-                },
-                {
-                    "name": "IoT",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(148,15,1)"
-                    }
-                },
-                {
-                    "name": "\u7535\u529b",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(38,8,81)"
-                    }
-                },
-                {
-                    "name": "\u751f\u6d3b\u767e\u8d27",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(85,51,114)"
-                    }
-                },
-                {
-                    "name": "\u4ea7\u54c1\u4f18\u5316",
-                    "value": 53,
-                    "textStyle": {
-                        "color": "rgb(5,113,111)"
-                    }
-                },
-                {
-                    "name": "\u4e2d\u53f0\u4ea7\u54c1",
-                    "value": 12,
-                    "textStyle": {
-                        "color": "rgb(18,59,129)"
-                    }
-                },
-                {
-                    "name": "\u82f1\u8bed\u53ef\u4f5c\u5de5\u4f5c\u8bed\u8a00",
-                    "value": 2,
-                    "textStyle": {
-                        "color": "rgb(7,120,114)"
-                    }
-                },
-                {
-                    "name": "\u5efa\u7b51\u884c\u4e1a",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(103,2,12)"
-                    }
-                },
-                {
-                    "name": "\u4ea7\u54c1\u5f00\u53d1",
-                    "value": 2,
-                    "textStyle": {
-                        "color": "rgb(56,146,78)"
-                    }
-                },
-                {
-                    "name": "\u4eba\u5de5\u667a\u80fd",
-                    "value": 14,
-                    "textStyle": {
-                        "color": "rgb(153,55,142)"
-                    }
-                },
-                {
-                    "name": "K12\u6559\u80b2",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(27,64,127)"
-                    }
-                },
-                {
-                    "name": "\u6559\u80b2\u884c\u4e1a",
-                    "value": 7,
-                    "textStyle": {
-                        "color": "rgb(65,81,45)"
-                    }
-                },
-                {
-                    "name": "\u6c7d\u8f66\u884c\u4e1a",
-                    "value": 2,
-                    "textStyle": {
-                        "color": "rgb(110,26,26)"
-                    }
-                },
-                {
-                    "name": "\u53e3\u8154\u62a4\u7406",
-                    "value": 2,
-                    "textStyle": {
-                        "color": "rgb(2,137,17)"
-                    }
-                },
-                {
-                    "name": "\u81ea\u7814",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(65,134,40)"
-                    }
-                },
-                {
-                    "name": "\u6570\u636e\u4ea7\u54c1\u7ecf\u7406",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(40,145,27)"
-                    }
-                },
-                {
-                    "name": "\u79fb\u6c11",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(57,44,117)"
-                    }
-                },
-                {
-                    "name": "\u9700\u6c42\u5206\u6790\u4e0e\u8bbe\u8ba1",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(87,69,136)"
-                    }
-                },
-                {
-                    "name": "B\u7aef\u4ea7\u54c1\u7ecf\u7406",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(15,152,96)"
-                    }
-                },
-                {
-                    "name": "\u8c03\u5ea6\u7b56\u7565\u4ea7\u54c1",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(130,26,146)"
-                    }
-                },
-                {
-                    "name": "\u5e7c\u513f\u6559\u80b2",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(0,18,1)"
-                    }
-                },
-                {
-                    "name": "axure",
-                    "value": 7,
-                    "textStyle": {
-                        "color": "rgb(78,60,56)"
-                    }
-                },
-                {
-                    "name": "\u4ece0\u52301\u7684\u89c4\u5212\u4ea7\u54c1",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(37,40,84)"
-                    }
-                },
-                {
-                    "name": "\u8de8\u5883\u7535\u5546",
-                    "value": 9,
-                    "textStyle": {
-                        "color": "rgb(12,132,11)"
-                    }
-                },
-                {
-                    "name": "\u8bbe\u8ba1\u670d\u52a1",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(95,24,139)"
-                    }
-                },
-                {
-                    "name": "PaaS\u7cfb\u7edf",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(141,139,81)"
-                    }
-                },
-                {
-                    "name": "\u9152\u5e97\u5f00\u53d1",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(32,119,111)"
-                    }
-                },
-                {
-                    "name": "\u85aa\u916c\u7ba1\u7406",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(101,2,135)"
-                    }
-                },
-                {
-                    "name": "AI\u4eba\u5de5\u667a\u80fd\u4ea7\u54c1",
-                    "value": 11,
-                    "textStyle": {
-                        "color": "rgb(113,80,103)"
-                    }
-                },
-                {
-                    "name": "\u5de5\u5177\u4ea7\u54c1",
-                    "value": 31,
-                    "textStyle": {
-                        "color": "rgb(158,5,73)"
-                    }
-                },
-                {
-                    "name": "\u91c7\u8d2d",
-                    "value": 4,
-                    "textStyle": {
-                        "color": "rgb(157,140,30)"
-                    }
-                },
-                {
-                    "name": "BI",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(129,42,65)"
-                    }
-                },
-                {
-                    "name": "to G",
-                    "value": 3,
-                    "textStyle": {
-                        "color": "rgb(36,70,3)"
-                    }
-                },
-                {
-                    "name": "Power BI",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(138,65,94)"
-                    }
-                },
-                {
-                    "name": "\u9152\u5e97\u4ea7\u54c1",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(52,12,27)"
-                    }
-                },
-                {
-                    "name": "word",
-                    "value": 2,
-                    "textStyle": {
-                        "color": "rgb(67,58,115)"
-                    }
-                },
-                {
-                    "name": "\u7535\u5b50/\u534a\u5bfc\u4f53/\u96c6\u6210\u7535\u8def",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(82,144,2)"
-                    }
-                },
-                {
-                    "name": "\u793e\u4ea4\u7535\u5546",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(18,16,136)"
-                    }
-                },
-                {
-                    "name": "\u65b9\u6848\u8bbe\u8ba1",
-                    "value": 2,
-                    "textStyle": {
-                        "color": "rgb(49,116,25)"
-                    }
-                },
-                {
-                    "name": "\u795e\u5916",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(93,19,19)"
-                    }
-                },
-                {
-                    "name": "ERP\u4ea7\u54c1",
-                    "value": 4,
-                    "textStyle": {
-                        "color": "rgb(41,9,35)"
-                    }
-                },
-                {
-                    "name": "\u4fe1\u606f\u6280\u672f",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(105,158,5)"
-                    }
-                },
-                {
-                    "name": "\u7535\u5546\u8fd0\u8425",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(48,68,38)"
-                    }
-                },
-                {
-                    "name": "\u533a\u5757\u94fe",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(5,142,38)"
-                    }
-                },
-                {
-                    "name": "APP",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(153,128,18)"
-                    }
-                },
-                {
-                    "name": "\u5927\u6570\u636e",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(92,22,14)"
-                    }
-                },
-                {
-                    "name": "\u7535\u5b50\u4ea7\u54c1\u53ca\u914d\u4ef6",
-                    "value": 3,
-                    "textStyle": {
-                        "color": "rgb(135,86,13)"
-                    }
-                },
-                {
-                    "name": "\u77ed\u89c6\u9891",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(24,94,159)"
-                    }
-                },
-                {
-                    "name": "\u98ce\u63a7\u4ea7\u54c1",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(74,20,0)"
-                    }
-                },
-                {
-                    "name": "\u88c5\u4fee\u88c5\u9970",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(112,38,40)"
-                    }
-                },
-                {
-                    "name": "\u5f00\u53d1\u5de5\u5177",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(0,126,3)"
-                    }
-                },
-                {
-                    "name": "\u7528\u6237\u589e\u957f",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(100,30,50)"
-                    }
-                },
-                {
-                    "name": "\u5feb\u6d88\u54c1",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(33,60,118)"
-                    }
-                },
-                {
-                    "name": "B2B",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(144,5,34)"
-                    }
-                },
-                {
-                    "name": "\u9879\u76ee\u89c4\u5212",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(77,119,113)"
-                    }
-                },
-                {
-                    "name": "ERP\u4ea7\u54c1\u7ecf\u7406",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(121,46,59)"
-                    }
-                },
-                {
-                    "name": "MindManager",
-                    "value": 3,
-                    "textStyle": {
-                        "color": "rgb(107,40,8)"
-                    }
-                },
-                {
-                    "name": "\u667a\u80fd\u8fd0\u7ef4\u4ea7\u54c1",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(138,146,8)"
-                    }
-                },
-                {
-                    "name": "\u7f8e\u5986",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(1,157,68)"
-                    }
-                },
-                {
-                    "name": "\u4f53\u5916\u8bca\u65ad\u4ea7\u54c1",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(18,80,58)"
-                    }
-                },
-                {
-                    "name": "\u5e02\u573a\u6d1e\u5bdf",
-                    "value": 2,
-                    "textStyle": {
-                        "color": "rgb(60,48,102)"
-                    }
-                },
-                {
-                    "name": "\u62db\u8058",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(60,146,76)"
-                    }
-                },
-                {
-                    "name": "\u8d22\u52a1\u7cfb\u7edf",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(141,3,123)"
-                    }
-                },
-                {
-                    "name": "\u7535\u5546\u4ea7\u54c1",
-                    "value": 16,
-                    "textStyle": {
-                        "color": "rgb(125,12,113)"
-                    }
-                },
-                {
-                    "name": "\u5ba2\u6237\u7aef\u4ea7\u54c1",
-                    "value": 6,
-                    "textStyle": {
-                        "color": "rgb(160,69,89)"
-                    }
-                },
-                {
-                    "name": "CRM\u7cfb\u7edf",
-                    "value": 4,
-                    "textStyle": {
-                        "color": "rgb(7,120,157)"
-                    }
-                },
-                {
-                    "name": "2B\u9886\u57df",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(107,48,16)"
-                    }
-                },
-                {
-                    "name": "\u5316\u5b66\u5316\u5de5",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(95,96,152)"
-                    }
-                },
-                {
-                    "name": "CE\u8ba4\u8bc1",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(17,128,123)"
-                    }
-                },
-                {
-                    "name": "AIOT",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(19,53,32)"
-                    }
-                },
-                {
-                    "name": "\u6570\u636e\u5e93\u6784\u5efa",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(81,36,62)"
-                    }
-                },
-                {
-                    "name": "\u533b\u7597\u884c\u4e1a",
-                    "value": 4,
-                    "textStyle": {
-                        "color": "rgb(74,140,18)"
-                    }
-                },
-                {
-                    "name": "\u65c5\u6e38\u4e1a",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(14,107,95)"
-                    }
-                },
-                {
-                    "name": "\u6548\u679c\u8bc4\u4f30",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(113,65,125)"
-                    }
-                },
-                {
-                    "name": "\u8de8\u5883\u878d\u8d44",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(66,131,93)"
-                    }
-                },
-                {
-                    "name": "\u677f\u6728\u5bb6\u5177",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(29,79,96)"
-                    }
-                },
-                {
-                    "name": "ppt",
-                    "value": 4,
-                    "textStyle": {
-                        "color": "rgb(22,25,69)"
-                    }
-                },
-                {
-                    "name": "Xmind",
-                    "value": 4,
-                    "textStyle": {
-                        "color": "rgb(33,76,136)"
-                    }
-                },
-                {
-                    "name": "Vision",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(62,89,94)"
-                    }
-                },
-                {
-                    "name": "\u6e20\u9053\u7b56\u5212",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(39,6,139)"
-                    }
-                },
-                {
-                    "name": "\u6295\u8d44\u4ea7\u54c1",
-                    "value": 2,
-                    "textStyle": {
-                        "color": "rgb(83,130,75)"
-                    }
-                },
-                {
-                    "name": "\u4ea7\u54c1\u7ecf\u7406 ",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(52,35,107)"
-                    }
-                },
-                {
-                    "name": "\u7701\u7ea7\u5206\u884c\u56fd\u9645\u4e1a\u52a1\u90e8",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(45,43,125)"
-                    }
-                },
-                {
-                    "name": "\u8de8\u5883\u4e1a\u52a1\u653f\u7b56",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(8,151,66)"
-                    }
-                },
-                {
-                    "name": "\u5185\u5bb9\u4ea7\u54c1",
-                    "value": 5,
-                    "textStyle": {
-                        "color": "rgb(157,124,56)"
-                    }
-                },
-                {
-                    "name": "\u4e91\u5e73\u53f0",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(136,142,135)"
-                    }
-                },
-                {
-                    "name": "\u786c\u4ef6\u4ea7\u54c1",
-                    "value": 13,
-                    "textStyle": {
-                        "color": "rgb(12,43,5)"
-                    }
-                },
-                {
-                    "name": "\u5546\u54c1\u8fd0\u8425",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(135,59,54)"
-                    }
-                },
-                {
-                    "name": "\u7ade\u54c1\u5206\u6790",
-                    "value": 28,
-                    "textStyle": {
-                        "color": "rgb(97,67,95)"
-                    }
-                },
-                {
-                    "name": "\u6570\u636e\u4e2d\u53f0",
-                    "value": 2,
-                    "textStyle": {
-                        "color": "rgb(6,47,68)"
-                    }
-                },
-                {
-                    "name": "\u56fd\u9645\u4e1a\u52a1\u4ea7\u54c1\u5f00\u53d1\u4e0e\u63a8\u5e7f",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(104,98,103)"
-                    }
-                },
-                {
-                    "name": "\u5236\u9020\u4e1a",
-                    "value": 4,
-                    "textStyle": {
-                        "color": "rgb(146,76,2)"
-                    }
-                },
-                {
-                    "name": "\u7ebf\u4e0a\u4e1a\u52a1\u5e73\u53f0\u5316\u4ea7\u54c1",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(51,3,111)"
-                    }
-                },
-                {
-                    "name": "\u6570\u636e\u6cbb\u7406",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(160,71,31)"
-                    }
-                },
-                {
-                    "name": "\u6279\u53d1/\u96f6\u552e",
-                    "value": 9,
-                    "textStyle": {
-                        "color": "rgb(28,55,66)"
-                    }
-                },
-                {
-                    "name": "\u53a8\u623f\u7c7b\u7535\u5668",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(61,134,111)"
-                    }
-                },
-                {
-                    "name": "\u666f\u533a",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(122,123,31)"
-                    }
-                },
-                {
-                    "name": "\u7535\u5546\u4ea7\u54c1\u7ecf\u7406 ",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(61,73,160)"
-                    }
-                },
-                {
-                    "name": "\u8f6f\u786c\u4ef6\u96c6\u6210",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(103,114,14)"
-                    }
-                },
-                {
-                    "name": "\u6570\u5b57\u5316",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(138,31,5)"
-                    }
-                },
-                {
-                    "name": "\u5ba0\u7269\u884c\u4e1a",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(62,40,17)"
-                    }
-                },
-                {
-                    "name": "App\u4ea7\u54c1\u7ecf\u7406 \u793e\u4ea4",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(44,64,17)"
-                    }
-                },
-                {
-                    "name": "\u4ea7\u54c1\u7ba1\u7406",
-                    "value": 2,
-                    "textStyle": {
-                        "color": "rgb(76,120,41)"
-                    }
-                },
-                {
-                    "name": "\u5e02\u573a\u63a8\u5e7f",
-                    "value": 3,
-                    "textStyle": {
-                        "color": "rgb(143,46,147)"
-                    }
-                },
-                {
-                    "name": "\u5e02\u573a\u914d\u5408",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(27,106,43)"
-                    }
-                },
-                {
-                    "name": "\u533b\u7597\u5065\u5eb7\u4ea7\u54c1",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(87,85,132)"
-                    }
-                },
-                {
-                    "name": "\u5feb\u6d88\u4ea7\u54c1\u7ecf\u7406",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(2,22,153)"
-                    }
-                },
-                {
-                    "name": "SaaS\u4ea7\u54c1",
-                    "value": 16,
-                    "textStyle": {
-                        "color": "rgb(84,132,35)"
-                    }
-                },
-                {
-                    "name": "\u5e02\u573a\u62d3\u5c55",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(60,51,138)"
-                    }
-                },
-                {
-                    "name": "\u5316\u5de5\u884c\u4e1a",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(120,6,131)"
-                    }
-                },
-                {
-                    "name": "\u4e24\u5b63\u7535\u5668",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(124,5,142)"
-                    }
-                },
-                {
-                    "name": "\u5e94\u6025\u884c\u4e1a",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(122,32,8)"
-                    }
-                },
-                {
-                    "name": "\u5e02\u573a\u8c03\u7814",
-                    "value": 32,
-                    "textStyle": {
-                        "color": "rgb(128,109,98)"
-                    }
-                },
-                {
-                    "name": "\u4ea7\u54c1\u8fed\u4ee3",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(101,33,58)"
-                    }
-                },
-                {
-                    "name": "IOT",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(26,26,69)"
-                    }
-                },
-                {
-                    "name": "\u4ea7\u54c1\u5e02\u573a",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(117,4,21)"
-                    }
-                },
-                {
-                    "name": "\u652f\u4ed8\u4ea7\u54c1",
-                    "value": 2,
-                    "textStyle": {
-                        "color": "rgb(18,0,155)"
-                    }
-                },
-                {
-                    "name": "HBase",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(94,12,154)"
-                    }
-                },
-                {
-                    "name": "\u76f4\u64ad",
-                    "value": 4,
-                    "textStyle": {
-                        "color": "rgb(130,2,46)"
-                    }
-                },
-                {
-                    "name": "\u533b\u5b66",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(105,35,77)"
-                    }
-                },
-                {
-                    "name": "\u653f\u5e9c\u8f6f\u4ef6\u4ea7\u54c1",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(90,4,54)"
-                    }
-                },
-                {
-                    "name": "\u5e94\u6025",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(9,22,154)"
-                    }
-                },
-                {
-                    "name": "\u5668\u68b0\u6ce8\u518c\u4e0a\u5e02\u89c4\u5212",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(40,72,59)"
-                    }
-                },
-                {
-                    "name": "IoTDB",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(20,9,6)"
-                    }
-                },
-                {
-                    "name": "\u8d44\u4ea7\u7ba1\u7406",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(79,46,153)"
-                    }
-                },
-                {
-                    "name": "\u6570\u636e\u5b58\u50a8",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(80,142,43)"
-                    }
-                },
-                {
-                    "name": "\u5e02\u573a\u8c03\u7814\u5206\u6790",
-                    "value": 2,
-                    "textStyle": {
-                        "color": "rgb(78,78,131)"
-                    }
-                },
-                {
-                    "name": "\u793e\u4ea4\u4ea7\u54c1",
-                    "value": 6,
-                    "textStyle": {
-                        "color": "rgb(120,22,131)"
-                    }
-                },
-                {
-                    "name": "\u79c1\u57df\u589e\u957f",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(140,53,145)"
-                    }
-                },
-                {
-                    "name": "\u6570\u636e\u4ea7\u54c1",
-                    "value": 49,
-                    "textStyle": {
-                        "color": "rgb(19,140,142)"
-                    }
-                },
-                {
-                    "name": "\u7535\u5b50\u5546\u52a1",
-                    "value": 17,
-                    "textStyle": {
-                        "color": "rgb(83,31,6)"
-                    }
-                },
-                {
-                    "name": "\u533b\u836f\u884c\u4e1a",
-                    "value": 2,
-                    "textStyle": {
-                        "color": "rgb(14,139,134)"
-                    }
-                },
-                {
-                    "name": "IP",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(10,152,40)"
-                    }
-                },
-                {
-                    "name": "\u76f8\u673a",
-                    "value": 3,
-                    "textStyle": {
-                        "color": "rgb(82,127,147)"
-                    }
-                },
-                {
-                    "name": "\u8bed\u97f3\u4ea7\u54c1",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(92,46,62)"
-                    }
-                },
-                {
-                    "name": "\u9700\u6c42\u6316\u6398",
-                    "value": 9,
-                    "textStyle": {
-                        "color": "rgb(80,27,18)"
-                    }
-                },
-                {
-                    "name": "\u623f\u5730\u4ea7\u884c\u4e1a",
-                    "value": 2,
-                    "textStyle": {
-                        "color": "rgb(99,140,147)"
-                    }
-                },
-                {
-                    "name": "\u4f01\u4e1a\u670d\u52a1",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(151,136,28)"
-                    }
-                },
-                {
-                    "name": "\u533b\u836f\u4ea7\u54c1",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(123,68,78)"
-                    }
-                },
-                {
-                    "name": "\u58a8\u5200",
-                    "value": 6,
-                    "textStyle": {
-                        "color": "rgb(144,99,100)"
-                    }
-                },
-                {
-                    "name": "\u624b\u673aAPP",
-                    "value": 3,
-                    "textStyle": {
-                        "color": "rgb(48,25,10)"
-                    }
-                },
-                {
-                    "name": "\u73a9\u5177/\u793c\u54c1",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(140,23,140)"
-                    }
-                },
-                {
-                    "name": "\u7269\u8054\u7f51",
-                    "value": 4,
-                    "textStyle": {
-                        "color": "rgb(50,68,67)"
-                    }
-                },
-                {
-                    "name": "\u6d77\u5916/\u8de8\u5883\u4e1a\u52a1",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(99,115,19)"
-                    }
-                },
-                {
-                    "name": "\u5730\u533a\u7ecf\u7406",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(5,87,127)"
-                    }
-                },
-                {
-                    "name": "\u671f\u8d27\u8bc1\u5238",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(143,26,13)"
-                    }
-                },
-                {
-                    "name": "\u4ea4\u4e92\u8bbe\u8ba1",
-                    "value": 22,
-                    "textStyle": {
-                        "color": "rgb(146,54,136)"
-                    }
-                },
-                {
-                    "name": "\u6e20\u9053\u9500\u552e",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(156,42,90)"
-                    }
-                },
-                {
-                    "name": "\u6570\u5b57\u5316\u8fd0\u8425",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(106,124,144)"
-                    }
-                },
-                {
-                    "name": "Spark",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(157,45,20)"
-                    }
-                },
-                {
-                    "name": "\u51fa\u5dee",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(132,93,136)"
-                    }
-                },
-                {
-                    "name": "\u5356\u70b9\u6316\u6398",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(69,116,112)"
-                    }
-                },
-                {
-                    "name": "\u73a9\u5177",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(48,109,63)"
-                    }
-                },
-                {
-                    "name": "\u81ea\u52a8\u9a7e\u9a76",
-                    "value": 2,
-                    "textStyle": {
-                        "color": "rgb(96,141,100)"
-                    }
-                },
-                {
-                    "name": "Excel",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(84,110,132)"
-                    }
-                },
-                {
-                    "name": "\u52a9\u7406",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(140,12,36)"
-                    }
-                },
-                {
-                    "name": "\u4ea7\u54c1\u7ecf\u7406\u8bfe\u7a0b",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(22,32,35)"
-                    }
-                },
-                {
-                    "name": "OA\u4ea7\u54c1",
-                    "value": 5,
-                    "textStyle": {
-                        "color": "rgb(82,62,84)"
-                    }
-                },
-                {
-                    "name": "\u5b66\u524d\u6559\u80b2",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(1,48,160)"
-                    }
-                },
-                {
-                    "name": "\u786c\u4ef6\u7cfb\u7edf\u96c6\u6210",
-                    "value": 7,
-                    "textStyle": {
-                        "color": "rgb(158,75,73)"
-                    }
-                },
-                {
-                    "name": "\u54a8\u8be2\u9879\u76ee",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(137,53,116)"
-                    }
-                },
-                {
-                    "name": "\u9006\u53d8\u5668",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(35,147,95)"
-                    }
-                },
-                {
-                    "name": "GCP\u8ba4\u8bc1",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(59,155,146)"
-                    }
-                },
-                {
-                    "name": "HRM\u7cfb\u7edf",
-                    "value": 2,
-                    "textStyle": {
-                        "color": "rgb(21,54,1)"
-                    }
-                },
-                {
-                    "name": "\u8bc1\u5238\u4e1a",
-                    "value": 2,
-                    "textStyle": {
-                        "color": "rgb(16,160,68)"
-                    }
-                },
-                {
-                    "name": "\u4f4f\u5bbf/\u9910\u996e\u4e1a",
-                    "value": 2,
-                    "textStyle": {
-                        "color": "rgb(101,47,136)"
-                    }
-                },
-                {
-                    "name": "\u91d1\u878d\u4ea7\u54c1",
-                    "value": 12,
-                    "textStyle": {
-                        "color": "rgb(149,130,101)"
-                    }
-                },
-                {
-                    "name": "\u552e\u524d\u4ea7\u54c1\u7ecf\u7406",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(82,7,29)"
-                    }
-                },
-                {
-                    "name": "\u6d77\u5916",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(55,20,151)"
-                    }
-                },
-                {
-                    "name": "\u4ea7\u54c1\u5168\u5468\u671f",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(8,28,62)"
-                    }
-                },
-                {
-                    "name": "\u5eb7\u590d\u533b\u7597\u5668\u68b0",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(88,146,131)"
-                    }
-                },
-                {
-                    "name": "\u5bb6\u5177\u8bbe\u8ba1",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(16,79,26)"
-                    }
-                },
-                {
-                    "name": "IIoT",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(67,77,79)"
-                    }
-                },
-                {
-                    "name": "\u5e93\u5b58\u7ba1\u7406",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(0,62,18)"
-                    }
-                },
-                {
-                    "name": "\u65b0\u80fd\u6e90",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(83,36,78)"
-                    }
-                },
-                {
-                    "name": "\u4f9b\u5e94\u94fe",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(34,58,1)"
-                    }
-                },
-                {
-                    "name": "\u6570\u636e\u53ef\u89c6\u5316",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(149,5,93)"
-                    }
-                },
-                {
-                    "name": "excel",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(150,79,41)"
-                    }
-                },
-                {
-                    "name": "\u4eba\u624d\u53d1\u5c55",
-                    "value": 1,
-                    "textStyle": {
-                        "color": "rgb(96,38,74)"
-                    }
-                }
-            ],
-            "drawOutOfBound": false,
-            "textStyle": {
-                "emphasis": {}
-            }
-        }
-    ],
-    "legend": [
-        {
-            "data": [],
-            "selected": {},
-            "show": true,
-            "padding": 5,
-            "itemGap": 10,
-            "itemWidth": 25,
-            "itemHeight": 14,
-            "backgroundColor": "transparent",
-            "borderColor": "#ccc",
-            "borderWidth": 1,
-            "borderRadius": 0,
-            "pageButtonItemGap": 5,
-            "pageButtonPosition": "end",
-            "pageFormatter": "{current}/{total}",
-            "pageIconColor": "#2f4554",
-            "pageIconInactiveColor": "#aaa",
-            "pageIconSize": 15,
-            "animationDurationUpdate": 800,
-            "selector": false,
-            "selectorPosition": "auto",
-            "selectorItemGap": 7,
-            "selectorButtonGap": 10
-        }
-    ],
-    "tooltip": {
-        "show": true,
-        "trigger": "item",
-        "triggerOn": "mousemove|click",
-        "axisPointer": {
-            "type": "line"
+      var chart_827d61f6a650419f8508d3109c8bf39f = echarts.init(
+        document.getElementById('827d61f6a650419f8508d3109c8bf39f'),
+        'white',
+        { renderer: 'canvas' }
+      );
+      var option_827d61f6a650419f8508d3109c8bf39f = {
+        animation: true,
+        animationThreshold: 2000,
+        animationDuration: 1000,
+        animationEasing: 'cubicOut',
+        animationDelay: 0,
+        animationDurationUpdate: 300,
+        animationEasingUpdate: 'cubicOut',
+        animationDelayUpdate: 0,
+        aria: {
+          enabled: false,
         },
-        "showContent": true,
-        "alwaysShowContent": false,
-        "showDelay": 0,
-        "hideDelay": 100,
-        "enterable": false,
-        "confine": false,
-        "appendToBody": false,
-        "transitionDuration": 0.4,
-        "textStyle": {
-            "fontSize": 14
+        color: [
+          '#5470c6',
+          '#91cc75',
+          '#fac858',
+          '#ee6666',
+          '#73c0de',
+          '#3ba272',
+          '#fc8452',
+          '#9a60b4',
+          '#ea7ccc',
+        ],
+        series: [
+          {
+            type: 'wordCloud',
+            shape: 'diamond',
+            rotationRange: [0, 0],
+            rotationStep: 45,
+            girdSize: 20,
+            sizeRange: [20, 100],
+            data: [
+              {
+                name: '\u5bf9\u8d26\u7ba1\u7406',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(24,97,39)',
+                },
+              },
+              {
+                name: '\u8d22\u52a1\u4ea7\u54c1',
+                value: 2,
+                textStyle: {
+                  color: 'rgb(77,97,88)',
+                },
+              },
+              {
+                name: '\u5efa\u7b51\u4fe1\u606f\u5316',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(20,66,45)',
+                },
+              },
+              {
+                name: '\u7cbe\u51c6\u533b\u7597',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(16,0,23)',
+                },
+              },
+              {
+                name: '\u4fe1\u7528\u5361\u4e1a\u52a1',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(19,120,78)',
+                },
+              },
+              {
+                name: 'Redis',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(7,130,76)',
+                },
+              },
+              {
+                name: '\u4ea7\u54c1\u8bbe\u8ba1',
+                value: 124,
+                textStyle: {
+                  color: 'rgb(83,8,102)',
+                },
+              },
+              {
+                name: '\u4fe1\u606f\u5316\u9879\u76ee',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(58,3,158)',
+                },
+              },
+              {
+                name: '\u6c7d\u8f66\u96f6\u90e8\u4ef6',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(45,44,129)',
+                },
+              },
+              {
+                name: 'OA\u7cfb\u7edf',
+                value: 4,
+                textStyle: {
+                  color: 'rgb(139,18,155)',
+                },
+              },
+              {
+                name: 'Axure',
+                value: 25,
+                textStyle: {
+                  color: 'rgb(42,32,7)',
+                },
+              },
+              {
+                name: '\u91d1\u878d\u7406\u8d22/\u8d37\u6b3e',
+                value: 4,
+                textStyle: {
+                  color: 'rgb(108,53,95)',
+                },
+              },
+              {
+                name: '\u533b\u836f\u4f01\u4e1a',
+                value: 2,
+                textStyle: {
+                  color: 'rgb(94,94,158)',
+                },
+              },
+              {
+                name: '\u753b\u50cf\u4ea7\u54c1',
+                value: 2,
+                textStyle: {
+                  color: 'rgb(69,122,44)',
+                },
+              },
+              {
+                name: '\u5b89\u5168\u4ea7\u54c1',
+                value: 2,
+                textStyle: {
+                  color: 'rgb(156,75,135)',
+                },
+              },
+              {
+                name: '\u5927\u6570\u636e\u5e73\u53f0',
+                value: 2,
+                textStyle: {
+                  color: 'rgb(57,14,150)',
+                },
+              },
+              {
+                name: '\u8bed\u8a00\u6559\u80b2',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(155,127,94)',
+                },
+              },
+              {
+                name: '\u751f\u547d\u5468\u671f\u7ba1\u7406',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(137,8,94)',
+                },
+              },
+              {
+                name: '\u9500\u552e\u8fd0\u8425',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(22,6,42)',
+                },
+              },
+              {
+                name: '\u7ee9\u6548\u7ba1\u7406',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(22,131,18)',
+                },
+              },
+              {
+                name: '\u6280\u672f\u652f\u6301',
+                value: 2,
+                textStyle: {
+                  color: 'rgb(124,90,122)',
+                },
+              },
+              {
+                name: '\u75ab\u82d7',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(147,67,52)',
+                },
+              },
+              {
+                name: '\u5916\u6c47\u7ba1\u7406',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(140,40,116)',
+                },
+              },
+              {
+                name: '\u62d3\u5c55\u57f9\u8bad',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(76,123,156)',
+                },
+              },
+              {
+                name: 'IT/\u4e92\u8054\u7f51/\u8f6f\u4ef6',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(100,72,45)',
+                },
+              },
+              {
+                name: 'Oracle',
+                value: 2,
+                textStyle: {
+                  color: 'rgb(138,90,87)',
+                },
+              },
+              {
+                name: '\u667a\u80fd\u5bb6\u5c45',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(153,107,4)',
+                },
+              },
+              {
+                name: 'Visio',
+                value: 8,
+                textStyle: {
+                  color: 'rgb(85,115,113)',
+                },
+              },
+              {
+                name: '\u91d1\u878d\u4ea7\u54c1\u7ecf\u7406',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(132,74,16)',
+                },
+              },
+              {
+                name: '\u75db\u70b9\u6316\u6398',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(13,149,30)',
+                },
+              },
+              {
+                name: '\u901a\u8baf/\u7f51\u7edc\u8bbe\u5907',
+                value: 4,
+                textStyle: {
+                  color: 'rgb(133,88,131)',
+                },
+              },
+              {
+                name: '\u79fb\u52a8\u7aef\u4ea7\u54c1',
+                value: 21,
+                textStyle: {
+                  color: 'rgb(113,39,72)',
+                },
+              },
+              {
+                name: '\u5ba0\u7269\u533b\u7597',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(68,8,75)',
+                },
+              },
+              {
+                name: '\u76f4\u64ad/\u89c6\u9891\u4ea7\u54c1',
+                value: 2,
+                textStyle: {
+                  color: 'rgb(143,79,141)',
+                },
+              },
+              {
+                name: '\u5f00\u53d1\u5957\u4ef6',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(155,2,62)',
+                },
+              },
+              {
+                name: '\u57ce\u5e02\u7ba1\u5bb6',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(36,3,135)',
+                },
+              },
+              {
+                name: '\u533b\u5b66\u603b\u76d1',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(77,43,66)',
+                },
+              },
+              {
+                name: '\u539f\u578b\u8bbe\u8ba1',
+                value: 28,
+                textStyle: {
+                  color: 'rgb(69,151,94)',
+                },
+              },
+              {
+                name: 'web\u7aef\u4ea7\u54c1',
+                value: 13,
+                textStyle: {
+                  color: 'rgb(115,65,106)',
+                },
+              },
+              {
+                name: 'B2C  ',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(118,121,36)',
+                },
+              },
+              {
+                name: '\u4ea7\u54c1\u89c4\u5212',
+                value: 135,
+                textStyle: {
+                  color: 'rgb(1,114,54)',
+                },
+              },
+              {
+                name: 'APP\u8fed\u4ee3',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(102,125,7)',
+                },
+              },
+              {
+                name: '\u6570\u636e\u6316\u6398',
+                value: 2,
+                textStyle: {
+                  color: 'rgb(37,130,105)',
+                },
+              },
+              {
+                name: '\u5feb\u6d88\u54c1\u7c7b',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(89,157,20)',
+                },
+              },
+              {
+                name: '\u6570\u5b57\u5316\u9700\u6c42',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(43,3,74)',
+                },
+              },
+              {
+                name: '\u6bcd\u5a74',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(33,115,28)',
+                },
+              },
+              {
+                name: '\u533b\u7597\u5668\u68b0',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(52,15,120)',
+                },
+              },
+              {
+                name: '\u751f\u6d3b\u670d\u52a1',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(8,87,48)',
+                },
+              },
+              {
+                name: '\u641c\u7d22\u4ea7\u54c1',
+                value: 3,
+                textStyle: {
+                  color: 'rgb(85,74,78)',
+                },
+              },
+              {
+                name: '\u73af\u536b\u4e00\u4f53\u5316',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(56,67,157)',
+                },
+              },
+              {
+                name: '.NET',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(76,102,109)',
+                },
+              },
+              {
+                name: '\u65b0\u96f6\u552e',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(160,79,96)',
+                },
+              },
+              {
+                name: '\u54c1\u724c\u7b56\u5212',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(28,134,65)',
+                },
+              },
+              {
+                name: '\u8d22\u52a1/\u5ba1\u8ba1/\u7a0e\u52a1',
+                value: 2,
+                textStyle: {
+                  color: 'rgb(34,64,55)',
+                },
+              },
+              {
+                name: '\u4ea7\u54c1\u751f\u547d\u5468\u671f',
+                value: 2,
+                textStyle: {
+                  color: 'rgb(3,76,0)',
+                },
+              },
+              {
+                name: 'CRM\u4ea7\u54c1',
+                value: 3,
+                textStyle: {
+                  color: 'rgb(29,79,10)',
+                },
+              },
+              {
+                name: '\u4ea7\u54c1\u7b56\u5212',
+                value: 3,
+                textStyle: {
+                  color: 'rgb(136,94,47)',
+                },
+              },
+              {
+                name: '\u4ea4\u901a/\u8fd0\u8f93',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(101,124,23)',
+                },
+              },
+              {
+                name: '\u5de5\u4e1a\u4e92\u8054\u7f51',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(152,43,78)',
+                },
+              },
+              {
+                name: 'API',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(137,101,119)',
+                },
+              },
+              {
+                name: '\u5f71\u50cf\u8bbe\u5907',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(24,31,153)',
+                },
+              },
+              {
+                name: '\u8bfe\u7a0b\u4ea7\u54c1',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(128,23,160)',
+                },
+              },
+              {
+                name: '\u706f\u9970\u7167\u660e',
+                value: 2,
+                textStyle: {
+                  color: 'rgb(125,50,121)',
+                },
+              },
+              {
+                name: '\u5f00\u53d1\u7ecf\u9a8c',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(70,7,81)',
+                },
+              },
+              {
+                name: '\u533b\u5b66\u7ecf\u7406 ',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(48,144,98)',
+                },
+              },
+              {
+                name: 'O2O',
+                value: 4,
+                textStyle: {
+                  color: 'rgb(121,138,32)',
+                },
+              },
+              {
+                name: '\u7206\u54c1\u6253\u9020',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(41,27,58)',
+                },
+              },
+              {
+                name: '\u9700\u6c42\u5206\u6790',
+                value: 52,
+                textStyle: {
+                  color: 'rgb(63,52,155)',
+                },
+              },
+              {
+                name: 'EHS\u7cfb\u7edf',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(137,94,3)',
+                },
+              },
+              {
+                name: '\u5ba2\u6237\u7ba1\u7406',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(11,61,112)',
+                },
+              },
+              {
+                name: 'to B',
+                value: 58,
+                textStyle: {
+                  color: 'rgb(5,4,85)',
+                },
+              },
+              {
+                name: 'H5\u7aef\u4ea7\u54c1',
+                value: 2,
+                textStyle: {
+                  color: 'rgb(138,120,76)',
+                },
+              },
+              {
+                name: '\u4ea7\u4e1a\u91d1\u878d',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(15,42,115)',
+                },
+              },
+              {
+                name: '\u751f\u7269\u5236\u54c1',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(125,42,79)',
+                },
+              },
+              {
+                name: '\u9700\u6c42\u7ba1\u7406',
+                value: 15,
+                textStyle: {
+                  color: 'rgb(84,126,101)',
+                },
+              },
+              {
+                name: 'OTA',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(26,106,53)',
+                },
+              },
+              {
+                name: '\u589e\u957f\u9ed1\u5ba2',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(73,75,60)',
+                },
+              },
+              {
+                name: '\u552e\u524d\u652f\u6301',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(37,80,143)',
+                },
+              },
+              {
+                name: '\u751f\u7269\u533b\u836f',
+                value: 2,
+                textStyle: {
+                  color: 'rgb(65,59,41)',
+                },
+              },
+              {
+                name: '\u901a\u4fe1/\u7f51\u7edc\u8bbe\u5907',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(114,72,141)',
+                },
+              },
+              {
+                name: 'C\u7aef\u4ea7\u54c1',
+                value: 4,
+                textStyle: {
+                  color: 'rgb(107,20,93)',
+                },
+              },
+              {
+                name: '\u9502\u7535\u6c60',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(43,67,60)',
+                },
+              },
+              {
+                name: '\u9500\u552e\u7ba1\u7406',
+                value: 2,
+                textStyle: {
+                  color: 'rgb(151,152,72)',
+                },
+              },
+              {
+                name: 'HR\u6a21\u5757',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(64,30,109)',
+                },
+              },
+              {
+                name: '\u91d1\u878d\u884c\u4e1a',
+                value: 12,
+                textStyle: {
+                  color: 'rgb(21,131,121)',
+                },
+              },
+              {
+                name: '\u4f9b\u5e94\u5546\u7ba1\u7406',
+                value: 2,
+                textStyle: {
+                  color: 'rgb(45,41,110)',
+                },
+              },
+              {
+                name: '\u65e0\u9500\u552e\u6027\u8d28',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(108,140,160)',
+                },
+              },
+              {
+                name: 'PPT',
+                value: 2,
+                textStyle: {
+                  color: 'rgb(122,27,137)',
+                },
+              },
+              {
+                name: '\u8f66\u8eab\u7535\u5b50\u6a21\u5757',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(104,95,115)',
+                },
+              },
+              {
+                name: '\u6570\u5b57\u5316\u9879\u76ee\u7ba1\u7406',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(124,91,18)',
+                },
+              },
+              {
+                name: '\u6280\u672f\u80cc\u666f',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(75,128,157)',
+                },
+              },
+              {
+                name: '\u4f01\u4e1a\u670d\u52a1\u4ea7\u54c1',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(38,126,37)',
+                },
+              },
+              {
+                name: '\u6d77\u5916\u4ea7\u54c1',
+                value: 2,
+                textStyle: {
+                  color: 'rgb(125,97,74)',
+                },
+              },
+              {
+                name: 'APP\u4ea7\u54c1',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(109,82,40)',
+                },
+              },
+              {
+                name: '\u5e02\u573a\u5b9a\u4f4d\u786e\u5b9a',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(41,74,40)',
+                },
+              },
+              {
+                name: '\u6c9f\u901a\u80fd\u529b',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(77,34,86)',
+                },
+              },
+              {
+                name: '\u7cfb\u7edf',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(113,125,25)',
+                },
+              },
+              {
+                name: '\u5e02\u573a\u7ecf\u7406',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(27,68,142)',
+                },
+              },
+              {
+                name: '\u82f1\u8bed',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(120,85,97)',
+                },
+              },
+              {
+                name: '\u667a\u6167\u57ce\u5e02',
+                value: 2,
+                textStyle: {
+                  color: 'rgb(83,14,48)',
+                },
+              },
+              {
+                name: '\u7167\u660e\u884c\u4e1a',
+                value: 2,
+                textStyle: {
+                  color: 'rgb(153,49,101)',
+                },
+              },
+              {
+                name: '\u552e\u540e\u670d\u52a1',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(131,149,90)',
+                },
+              },
+              {
+                name: '\u4fdd\u9669\u4e1a\u52a1',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(78,14,119)',
+                },
+              },
+              {
+                name: '\u667a\u80fd\u5236\u9020',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(13,50,67)',
+                },
+              },
+              {
+                name: 'b\u7aef\u4ea7\u54c1',
+                value: 3,
+                textStyle: {
+                  color: 'rgb(50,154,61)',
+                },
+              },
+              {
+                name: '\u793e\u4ea4\u7f51\u7edc',
+                value: 2,
+                textStyle: {
+                  color: 'rgb(160,69,52)',
+                },
+              },
+              {
+                name: '\u4ea7\u54c1\u7b56\u7565',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(104,85,60)',
+                },
+              },
+              {
+                name: '\u8ba1\u8d39',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(20,3,73)',
+                },
+              },
+              {
+                name: '\u624b\u6e38',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(70,91,78)',
+                },
+              },
+              {
+                name: '\u4ea7\u54c1\u5b9a\u4e49',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(61,153,143)',
+                },
+              },
+              {
+                name: '\u81ea\u52a8\u5316',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(75,80,15)',
+                },
+              },
+              {
+                name: '\u4ea4\u6613\u4ea7\u54c1',
+                value: 8,
+                textStyle: {
+                  color: 'rgb(47,25,95)',
+                },
+              },
+              {
+                name: '\u9879\u76ee\u7ba1\u7406',
+                value: 4,
+                textStyle: {
+                  color: 'rgb(130,62,42)',
+                },
+              },
+              {
+                name: '\u722c\u866b',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(154,149,21)',
+                },
+              },
+              {
+                name: '\u4e59\u65b9\u516c\u53f8\u80cc\u666f',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(12,52,121)',
+                },
+              },
+              {
+                name: 'AI',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(17,7,66)',
+                },
+              },
+              {
+                name: '\u5c0f\u7a0b\u5e8f\u4ea7\u54c1',
+                value: 7,
+                textStyle: {
+                  color: 'rgb(142,149,153)',
+                },
+              },
+              {
+                name: '\u8f6f\u4ef6\u884c\u4e1a',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(69,142,25)',
+                },
+              },
+              {
+                name: '\u4ea7\u54c1\u7ecf\u7406',
+                value: 10,
+                textStyle: {
+                  color: 'rgb(73,55,23)',
+                },
+              },
+              {
+                name: '\u8f6f\u4f53\u5bb6\u5177',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(55,5,156)',
+                },
+              },
+              {
+                name: 'IT\u4e92\u8054\u7f51',
+                value: 43,
+                textStyle: {
+                  color: 'rgb(124,67,37)',
+                },
+              },
+              {
+                name: '\u4ea7\u54c1\u8425\u9500',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(105,149,114)',
+                },
+              },
+              {
+                name: '\u62db\u8058\u884c\u4e1a',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(67,98,66)',
+                },
+              },
+              {
+                name: '\u5bb6\u7535\u884c\u4e1a',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(71,53,138)',
+                },
+              },
+              {
+                name: '\u4e70\u624b',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(96,91,10)',
+                },
+              },
+              {
+                name: '\u6d41\u7a0b\u8bbe\u8ba1',
+                value: 14,
+                textStyle: {
+                  color: 'rgb(71,139,89)',
+                },
+              },
+              {
+                name: '\u65e0\u7ebf\u901a\u4fe1\u65b9\u5411',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(95,64,142)',
+                },
+              },
+              {
+                name: '\u5b9e\u6728\u5bb6\u5177',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(47,137,124)',
+                },
+              },
+              {
+                name: '\u94f6\u884c\u56fd\u9645\u4e1a\u52a1',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(150,86,150)',
+                },
+              },
+              {
+                name: '\u67b6\u6784\u8bbe\u8ba1',
+                value: 3,
+                textStyle: {
+                  color: 'rgb(39,144,3)',
+                },
+              },
+              {
+                name: '\u4e34\u5e8a\u8bd5\u9a8c',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(128,14,48)',
+                },
+              },
+              {
+                name: 'SaaS\u7cfb\u7edf',
+                value: 3,
+                textStyle: {
+                  color: 'rgb(17,112,32)',
+                },
+              },
+              {
+                name: '\u5206\u6790\u751f\u7269\u5b66',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(8,20,129)',
+                },
+              },
+              {
+                name: '\u5efa\u7b51\u8f6f\u4ef6',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(14,140,105)',
+                },
+              },
+              {
+                name: '\u7b7e\u8bc1',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(155,144,143)',
+                },
+              },
+              {
+                name: '\u4ea7\u54c1\u529f\u80fd\u89c4\u5212',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(145,31,96)',
+                },
+              },
+              {
+                name: '\u9700\u6c42\u8c03\u7814',
+                value: 11,
+                textStyle: {
+                  color: 'rgb(158,37,48)',
+                },
+              },
+              {
+                name: '\u706f\u5177',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(117,92,140)',
+                },
+              },
+              {
+                name: '\u5988\u5988\u7f51 \u5b9d\u5b9d\u7f51',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(72,115,53)',
+                },
+              },
+              {
+                name: '\u4f9b\u5e94\u94fe\u4ea7\u54c1',
+                value: 18,
+                textStyle: {
+                  color: 'rgb(63,85,109)',
+                },
+              },
+              {
+                name: '\u7269\u4e1a\u670d\u52a1',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(147,43,42)',
+                },
+              },
+              {
+                name: '\u7535\u5546\u4ea7\u54c1\u7ecf\u7406',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(61,118,24)',
+                },
+              },
+              {
+                name: '\u7269\u6d41\u5feb\u9012',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(27,119,53)',
+                },
+              },
+              {
+                name: '\u7814\u8ba8\u4f1a',
+                value: 2,
+                textStyle: {
+                  color: 'rgb(24,10,80)',
+                },
+              },
+              {
+                name: '\u6570\u636e\u4ed3\u5e93\u642d\u5efa',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(0,157,5)',
+                },
+              },
+              {
+                name: '\u4f4e\u4ee3\u7801',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(142,1,95)',
+                },
+              },
+              {
+                name: '\u7528\u6237\u7814\u7a76',
+                value: 80,
+                textStyle: {
+                  color: 'rgb(84,104,140)',
+                },
+              },
+              {
+                name: '\u98df\u54c1\u996e\u6599',
+                value: 2,
+                textStyle: {
+                  color: 'rgb(152,69,70)',
+                },
+              },
+              {
+                name: '\u7b56\u7565\u4ea7\u54c1',
+                value: 25,
+                textStyle: {
+                  color: 'rgb(120,39,157)',
+                },
+              },
+              {
+                name: '\u793e\u533a/\u793e\u4ea4\u4ea7\u54c1',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(125,45,140)',
+                },
+              },
+              {
+                name: '\u7eff\u8272\u80fd\u6e90',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(57,5,26)',
+                },
+              },
+              {
+                name: '\u53e3\u8154\u5065\u5eb7',
+                value: 2,
+                textStyle: {
+                  color: 'rgb(110,29,63)',
+                },
+              },
+              {
+                name: '\u5e02\u573a\u5b66\u672f\u63a8\u5e7f',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(99,89,6)',
+                },
+              },
+              {
+                name: '\u4fe1\u606f\u5b89\u5168',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(80,123,36)',
+                },
+              },
+              {
+                name: '\u57f9\u8bad',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(58,4,112)',
+                },
+              },
+              {
+                name: '\u8de8\u5883\u7535\u5546\u884c\u4e1a',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(8,31,113)',
+                },
+              },
+              {
+                name: '\u56e2\u961f\u7ba1\u7406',
+                value: 61,
+                textStyle: {
+                  color: 'rgb(49,113,32)',
+                },
+              },
+              {
+                name: '\u667a\u6167\u57ce\u7ba1',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(0,65,79)',
+                },
+              },
+              {
+                name: '\u5e02\u573a\u7b56\u5212',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(130,60,158)',
+                },
+              },
+              {
+                name: '\u6d3b\u52a8\u7b56\u5212',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(63,99,36)',
+                },
+              },
+              {
+                name: '\u670d\u52a1\u4e1a',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(113,22,114)',
+                },
+              },
+              {
+                name: '\u73af\u5883\u7c7b\u7535\u5668',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(160,10,119)',
+                },
+              },
+              {
+                name: '\u5f00\u53d1\u8fc7\u7a0b\u8ddf\u8e2a',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(127,94,102)',
+                },
+              },
+              {
+                name: '\u7269\u8d44\u5e73\u53f0',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(9,147,98)',
+                },
+              },
+              {
+                name: '\u4ea4\u901a/\u8fd0\u8f93/\u7269\u6d41',
+                value: 3,
+                textStyle: {
+                  color: 'rgb(112,99,11)',
+                },
+              },
+              {
+                name: '\u8f7b\u5962\u98ce\u683c',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(152,101,145)',
+                },
+              },
+              {
+                name: '\u6570\u636e\u79d1\u5b66',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(69,56,31)',
+                },
+              },
+              {
+                name: '\u7206\u54c1',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(98,108,77)',
+                },
+              },
+              {
+                name: '\u8ba1\u7b97\u673a\u8f6f\u4ef6',
+                value: 16,
+                textStyle: {
+                  color: 'rgb(40,138,40)',
+                },
+              },
+              {
+                name: 'powerpoint',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(137,58,136)',
+                },
+              },
+              {
+                name: 'xmind',
+                value: 5,
+                textStyle: {
+                  color: 'rgb(138,14,11)',
+                },
+              },
+              {
+                name: '\u4fbf\u5229\u5e97',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(73,97,70)',
+                },
+              },
+              {
+                name: '\u6c7d\u8f66\u5236\u9020',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(95,93,21)',
+                },
+              },
+              {
+                name: '\u62a4\u80a4\u54c1\u5f00\u53d1',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(17,44,66)',
+                },
+              },
+              {
+                name: 'HR\u7cfb\u7edf',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(0,74,44)',
+                },
+              },
+              {
+                name: '\u57fa\u7ad9\u786c\u4ef6',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(106,54,57)',
+                },
+              },
+              {
+                name: '\u4ea7\u54c1\u63a8\u5e7f',
+                value: 3,
+                textStyle: {
+                  color: 'rgb(105,117,11)',
+                },
+              },
+              {
+                name: '\u5316\u5b66',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(141,91,96)',
+                },
+              },
+              {
+                name: '\u65c5\u6e38\u884c\u4e1a',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(109,53,134)',
+                },
+              },
+              {
+                name: '\u4ea7\u54c1\u7ecf\u7406 \u76f8\u673a ',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(4,60,95)',
+                },
+              },
+              {
+                name: 'to C',
+                value: 31,
+                textStyle: {
+                  color: 'rgb(133,2,153)',
+                },
+              },
+              {
+                name: '\u5546\u4e1a\u4ea7\u54c1',
+                value: 14,
+                textStyle: {
+                  color: 'rgb(116,36,92)',
+                },
+              },
+              {
+                name: '\u97f3\u4e50\u884c\u4e1a',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(48,31,36)',
+                },
+              },
+              {
+                name: '\u6559\u80b2\u8f6f\u4ef6',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(146,3,143)',
+                },
+              },
+              {
+                name: '\u5de5\u4e1a4.0',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(120,37,110)',
+                },
+              },
+              {
+                name: 'ERP\u7cfb\u7edf',
+                value: 3,
+                textStyle: {
+                  color: 'rgb(134,45,158)',
+                },
+              },
+              {
+                name: '\u78b3\u6392\u653e',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(156,138,48)',
+                },
+              },
+              {
+                name: '\u5927\u533a\u7ecf\u7406',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(138,118,90)',
+                },
+              },
+              {
+                name: '\u5e73\u53f0\u4ea7\u54c1',
+                value: 16,
+                textStyle: {
+                  color: 'rgb(153,125,143)',
+                },
+              },
+              {
+                name: '\u4e34\u5e8a\u9879\u76ee\u7ba1\u7406',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(138,97,23)',
+                },
+              },
+              {
+                name: '\u6444\u50cf\u673a',
+                value: 5,
+                textStyle: {
+                  color: 'rgb(137,0,143)',
+                },
+              },
+              {
+                name: '\u8282\u80fd\u786c\u4ef6',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(67,9,97)',
+                },
+              },
+              {
+                name: '\u5e02\u573a\u603b\u76d1',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(3,108,113)',
+                },
+              },
+              {
+                name: '\u6570\u5b57\u5316\u8f6c\u578b',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(138,94,13)',
+                },
+              },
+              {
+                name: '\u540e\u53f0\u4ea7\u54c1',
+                value: 13,
+                textStyle: {
+                  color: 'rgb(94,25,73)',
+                },
+              },
+              {
+                name: '\u589e\u957f\u4ea7\u54c1',
+                value: 7,
+                textStyle: {
+                  color: 'rgb(115,73,149)',
+                },
+              },
+              {
+                name: '\u8bc4\u4f30\u9879\u76ee\u98ce\u9669',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(19,78,155)',
+                },
+              },
+              {
+                name: '\u5b89\u9632\u673a',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(147,48,147)',
+                },
+              },
+              {
+                name: '\u4ea7\u54c1\u4f01\u5212',
+                value: 2,
+                textStyle: {
+                  color: 'rgb(19,158,6)',
+                },
+              },
+              {
+                name: '\u667a\u80fd\u786c\u4ef6',
+                value: 12,
+                textStyle: {
+                  color: 'rgb(125,12,134)',
+                },
+              },
+              {
+                name: '\u57fa\u56e0\u68c0\u6d4b',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(154,39,39)',
+                },
+              },
+              {
+                name: 'App\u4ea7\u54c1\u603b\u76d1 \u7f8e\u67da',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(145,80,63)',
+                },
+              },
+              {
+                name: '\u76f2\u76d2',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(120,68,89)',
+                },
+              },
+              {
+                name: '\u8fde\u9501',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(61,62,46)',
+                },
+              },
+              {
+                name: '\u6b27\u7f8e\u98ce\u683c',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(30,100,111)',
+                },
+              },
+              {
+                name: 'ETL',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(104,23,41)',
+                },
+              },
+              {
+                name: '\u6570\u636e\u5206\u6790',
+                value: 54,
+                textStyle: {
+                  color: 'rgb(1,84,51)',
+                },
+              },
+              {
+                name: 'SCM',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(150,94,159)',
+                },
+              },
+              {
+                name: '\u667a\u6167\u7167\u660e',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(24,14,31)',
+                },
+              },
+              {
+                name: '\u5546\u54c1\u7ba1\u7406',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(103,67,102)',
+                },
+              },
+              {
+                name: '\u6d88\u8d39\u54c1',
+                value: 10,
+                textStyle: {
+                  color: 'rgb(141,154,154)',
+                },
+              },
+              {
+                name: 'CRM\u8f6f\u4ef6',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(15,156,143)',
+                },
+              },
+              {
+                name: 'SRM',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(55,60,86)',
+                },
+              },
+              {
+                name: '\u6e38\u620f',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(114,2,58)',
+                },
+              },
+              {
+                name: '\u7535\u5546',
+                value: 2,
+                textStyle: {
+                  color: 'rgb(154,64,16)',
+                },
+              },
+              {
+                name: '\u9700\u6c42\u9a8c\u8bc1',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(59,78,122)',
+                },
+              },
+              {
+                name: '\u5927\u5ba2\u6237',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(32,156,38)',
+                },
+              },
+              {
+                name: '\u56fa\u6536\u7cfb\u7edf',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(143,16,62)',
+                },
+              },
+              {
+                name: '\u516c\u53f8\u4fe1\u8d37',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(44,92,31)',
+                },
+              },
+              {
+                name: 'visio',
+                value: 6,
+                textStyle: {
+                  color: 'rgb(105,51,59)',
+                },
+              },
+              {
+                name: '\u4eba\u624d\u670d\u52a1\u4ea7\u54c1',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(24,117,62)',
+                },
+              },
+              {
+                name: '\u533b\u751f',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(89,137,31)',
+                },
+              },
+              {
+                name: '\u5b9a\u4ef7/\u7ade\u4ef7\u4ea7\u54c1',
+                value: 4,
+                textStyle: {
+                  color: 'rgb(111,115,118)',
+                },
+              },
+              {
+                name: '\u4eba\u4e8b\u7cfb\u7edf',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(110,29,74)',
+                },
+              },
+              {
+                name: '\u9aa8\u79d1\u810a\u67f1\u521b\u4f24\u6216\u7ec4\u7ec7\u4fee\u590d\u76f8\u5173\u4ea7\u54c1',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(130,6,63)',
+                },
+              },
+              {
+                name: '\u56fd\u9645\u7ed3\u7b97',
+                value: 2,
+                textStyle: {
+                  color: 'rgb(111,141,144)',
+                },
+              },
+              {
+                name: 'IoT',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(148,15,1)',
+                },
+              },
+              {
+                name: '\u7535\u529b',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(38,8,81)',
+                },
+              },
+              {
+                name: '\u751f\u6d3b\u767e\u8d27',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(85,51,114)',
+                },
+              },
+              {
+                name: '\u4ea7\u54c1\u4f18\u5316',
+                value: 53,
+                textStyle: {
+                  color: 'rgb(5,113,111)',
+                },
+              },
+              {
+                name: '\u4e2d\u53f0\u4ea7\u54c1',
+                value: 12,
+                textStyle: {
+                  color: 'rgb(18,59,129)',
+                },
+              },
+              {
+                name: '\u82f1\u8bed\u53ef\u4f5c\u5de5\u4f5c\u8bed\u8a00',
+                value: 2,
+                textStyle: {
+                  color: 'rgb(7,120,114)',
+                },
+              },
+              {
+                name: '\u5efa\u7b51\u884c\u4e1a',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(103,2,12)',
+                },
+              },
+              {
+                name: '\u4ea7\u54c1\u5f00\u53d1',
+                value: 2,
+                textStyle: {
+                  color: 'rgb(56,146,78)',
+                },
+              },
+              {
+                name: '\u4eba\u5de5\u667a\u80fd',
+                value: 14,
+                textStyle: {
+                  color: 'rgb(153,55,142)',
+                },
+              },
+              {
+                name: 'K12\u6559\u80b2',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(27,64,127)',
+                },
+              },
+              {
+                name: '\u6559\u80b2\u884c\u4e1a',
+                value: 7,
+                textStyle: {
+                  color: 'rgb(65,81,45)',
+                },
+              },
+              {
+                name: '\u6c7d\u8f66\u884c\u4e1a',
+                value: 2,
+                textStyle: {
+                  color: 'rgb(110,26,26)',
+                },
+              },
+              {
+                name: '\u53e3\u8154\u62a4\u7406',
+                value: 2,
+                textStyle: {
+                  color: 'rgb(2,137,17)',
+                },
+              },
+              {
+                name: '\u81ea\u7814',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(65,134,40)',
+                },
+              },
+              {
+                name: '\u6570\u636e\u4ea7\u54c1\u7ecf\u7406',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(40,145,27)',
+                },
+              },
+              {
+                name: '\u79fb\u6c11',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(57,44,117)',
+                },
+              },
+              {
+                name: '\u9700\u6c42\u5206\u6790\u4e0e\u8bbe\u8ba1',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(87,69,136)',
+                },
+              },
+              {
+                name: 'B\u7aef\u4ea7\u54c1\u7ecf\u7406',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(15,152,96)',
+                },
+              },
+              {
+                name: '\u8c03\u5ea6\u7b56\u7565\u4ea7\u54c1',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(130,26,146)',
+                },
+              },
+              {
+                name: '\u5e7c\u513f\u6559\u80b2',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(0,18,1)',
+                },
+              },
+              {
+                name: 'axure',
+                value: 7,
+                textStyle: {
+                  color: 'rgb(78,60,56)',
+                },
+              },
+              {
+                name: '\u4ece0\u52301\u7684\u89c4\u5212\u4ea7\u54c1',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(37,40,84)',
+                },
+              },
+              {
+                name: '\u8de8\u5883\u7535\u5546',
+                value: 9,
+                textStyle: {
+                  color: 'rgb(12,132,11)',
+                },
+              },
+              {
+                name: '\u8bbe\u8ba1\u670d\u52a1',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(95,24,139)',
+                },
+              },
+              {
+                name: 'PaaS\u7cfb\u7edf',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(141,139,81)',
+                },
+              },
+              {
+                name: '\u9152\u5e97\u5f00\u53d1',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(32,119,111)',
+                },
+              },
+              {
+                name: '\u85aa\u916c\u7ba1\u7406',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(101,2,135)',
+                },
+              },
+              {
+                name: 'AI\u4eba\u5de5\u667a\u80fd\u4ea7\u54c1',
+                value: 11,
+                textStyle: {
+                  color: 'rgb(113,80,103)',
+                },
+              },
+              {
+                name: '\u5de5\u5177\u4ea7\u54c1',
+                value: 31,
+                textStyle: {
+                  color: 'rgb(158,5,73)',
+                },
+              },
+              {
+                name: '\u91c7\u8d2d',
+                value: 4,
+                textStyle: {
+                  color: 'rgb(157,140,30)',
+                },
+              },
+              {
+                name: 'BI',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(129,42,65)',
+                },
+              },
+              {
+                name: 'to G',
+                value: 3,
+                textStyle: {
+                  color: 'rgb(36,70,3)',
+                },
+              },
+              {
+                name: 'Power BI',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(138,65,94)',
+                },
+              },
+              {
+                name: '\u9152\u5e97\u4ea7\u54c1',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(52,12,27)',
+                },
+              },
+              {
+                name: 'word',
+                value: 2,
+                textStyle: {
+                  color: 'rgb(67,58,115)',
+                },
+              },
+              {
+                name: '\u7535\u5b50/\u534a\u5bfc\u4f53/\u96c6\u6210\u7535\u8def',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(82,144,2)',
+                },
+              },
+              {
+                name: '\u793e\u4ea4\u7535\u5546',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(18,16,136)',
+                },
+              },
+              {
+                name: '\u65b9\u6848\u8bbe\u8ba1',
+                value: 2,
+                textStyle: {
+                  color: 'rgb(49,116,25)',
+                },
+              },
+              {
+                name: '\u795e\u5916',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(93,19,19)',
+                },
+              },
+              {
+                name: 'ERP\u4ea7\u54c1',
+                value: 4,
+                textStyle: {
+                  color: 'rgb(41,9,35)',
+                },
+              },
+              {
+                name: '\u4fe1\u606f\u6280\u672f',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(105,158,5)',
+                },
+              },
+              {
+                name: '\u7535\u5546\u8fd0\u8425',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(48,68,38)',
+                },
+              },
+              {
+                name: '\u533a\u5757\u94fe',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(5,142,38)',
+                },
+              },
+              {
+                name: 'APP',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(153,128,18)',
+                },
+              },
+              {
+                name: '\u5927\u6570\u636e',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(92,22,14)',
+                },
+              },
+              {
+                name: '\u7535\u5b50\u4ea7\u54c1\u53ca\u914d\u4ef6',
+                value: 3,
+                textStyle: {
+                  color: 'rgb(135,86,13)',
+                },
+              },
+              {
+                name: '\u77ed\u89c6\u9891',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(24,94,159)',
+                },
+              },
+              {
+                name: '\u98ce\u63a7\u4ea7\u54c1',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(74,20,0)',
+                },
+              },
+              {
+                name: '\u88c5\u4fee\u88c5\u9970',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(112,38,40)',
+                },
+              },
+              {
+                name: '\u5f00\u53d1\u5de5\u5177',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(0,126,3)',
+                },
+              },
+              {
+                name: '\u7528\u6237\u589e\u957f',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(100,30,50)',
+                },
+              },
+              {
+                name: '\u5feb\u6d88\u54c1',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(33,60,118)',
+                },
+              },
+              {
+                name: 'B2B',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(144,5,34)',
+                },
+              },
+              {
+                name: '\u9879\u76ee\u89c4\u5212',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(77,119,113)',
+                },
+              },
+              {
+                name: 'ERP\u4ea7\u54c1\u7ecf\u7406',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(121,46,59)',
+                },
+              },
+              {
+                name: 'MindManager',
+                value: 3,
+                textStyle: {
+                  color: 'rgb(107,40,8)',
+                },
+              },
+              {
+                name: '\u667a\u80fd\u8fd0\u7ef4\u4ea7\u54c1',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(138,146,8)',
+                },
+              },
+              {
+                name: '\u7f8e\u5986',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(1,157,68)',
+                },
+              },
+              {
+                name: '\u4f53\u5916\u8bca\u65ad\u4ea7\u54c1',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(18,80,58)',
+                },
+              },
+              {
+                name: '\u5e02\u573a\u6d1e\u5bdf',
+                value: 2,
+                textStyle: {
+                  color: 'rgb(60,48,102)',
+                },
+              },
+              {
+                name: '\u62db\u8058',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(60,146,76)',
+                },
+              },
+              {
+                name: '\u8d22\u52a1\u7cfb\u7edf',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(141,3,123)',
+                },
+              },
+              {
+                name: '\u7535\u5546\u4ea7\u54c1',
+                value: 16,
+                textStyle: {
+                  color: 'rgb(125,12,113)',
+                },
+              },
+              {
+                name: '\u5ba2\u6237\u7aef\u4ea7\u54c1',
+                value: 6,
+                textStyle: {
+                  color: 'rgb(160,69,89)',
+                },
+              },
+              {
+                name: 'CRM\u7cfb\u7edf',
+                value: 4,
+                textStyle: {
+                  color: 'rgb(7,120,157)',
+                },
+              },
+              {
+                name: '2B\u9886\u57df',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(107,48,16)',
+                },
+              },
+              {
+                name: '\u5316\u5b66\u5316\u5de5',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(95,96,152)',
+                },
+              },
+              {
+                name: 'CE\u8ba4\u8bc1',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(17,128,123)',
+                },
+              },
+              {
+                name: 'AIOT',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(19,53,32)',
+                },
+              },
+              {
+                name: '\u6570\u636e\u5e93\u6784\u5efa',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(81,36,62)',
+                },
+              },
+              {
+                name: '\u533b\u7597\u884c\u4e1a',
+                value: 4,
+                textStyle: {
+                  color: 'rgb(74,140,18)',
+                },
+              },
+              {
+                name: '\u65c5\u6e38\u4e1a',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(14,107,95)',
+                },
+              },
+              {
+                name: '\u6548\u679c\u8bc4\u4f30',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(113,65,125)',
+                },
+              },
+              {
+                name: '\u8de8\u5883\u878d\u8d44',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(66,131,93)',
+                },
+              },
+              {
+                name: '\u677f\u6728\u5bb6\u5177',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(29,79,96)',
+                },
+              },
+              {
+                name: 'ppt',
+                value: 4,
+                textStyle: {
+                  color: 'rgb(22,25,69)',
+                },
+              },
+              {
+                name: 'Xmind',
+                value: 4,
+                textStyle: {
+                  color: 'rgb(33,76,136)',
+                },
+              },
+              {
+                name: 'Vision',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(62,89,94)',
+                },
+              },
+              {
+                name: '\u6e20\u9053\u7b56\u5212',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(39,6,139)',
+                },
+              },
+              {
+                name: '\u6295\u8d44\u4ea7\u54c1',
+                value: 2,
+                textStyle: {
+                  color: 'rgb(83,130,75)',
+                },
+              },
+              {
+                name: '\u4ea7\u54c1\u7ecf\u7406 ',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(52,35,107)',
+                },
+              },
+              {
+                name: '\u7701\u7ea7\u5206\u884c\u56fd\u9645\u4e1a\u52a1\u90e8',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(45,43,125)',
+                },
+              },
+              {
+                name: '\u8de8\u5883\u4e1a\u52a1\u653f\u7b56',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(8,151,66)',
+                },
+              },
+              {
+                name: '\u5185\u5bb9\u4ea7\u54c1',
+                value: 5,
+                textStyle: {
+                  color: 'rgb(157,124,56)',
+                },
+              },
+              {
+                name: '\u4e91\u5e73\u53f0',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(136,142,135)',
+                },
+              },
+              {
+                name: '\u786c\u4ef6\u4ea7\u54c1',
+                value: 13,
+                textStyle: {
+                  color: 'rgb(12,43,5)',
+                },
+              },
+              {
+                name: '\u5546\u54c1\u8fd0\u8425',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(135,59,54)',
+                },
+              },
+              {
+                name: '\u7ade\u54c1\u5206\u6790',
+                value: 28,
+                textStyle: {
+                  color: 'rgb(97,67,95)',
+                },
+              },
+              {
+                name: '\u6570\u636e\u4e2d\u53f0',
+                value: 2,
+                textStyle: {
+                  color: 'rgb(6,47,68)',
+                },
+              },
+              {
+                name: '\u56fd\u9645\u4e1a\u52a1\u4ea7\u54c1\u5f00\u53d1\u4e0e\u63a8\u5e7f',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(104,98,103)',
+                },
+              },
+              {
+                name: '\u5236\u9020\u4e1a',
+                value: 4,
+                textStyle: {
+                  color: 'rgb(146,76,2)',
+                },
+              },
+              {
+                name: '\u7ebf\u4e0a\u4e1a\u52a1\u5e73\u53f0\u5316\u4ea7\u54c1',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(51,3,111)',
+                },
+              },
+              {
+                name: '\u6570\u636e\u6cbb\u7406',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(160,71,31)',
+                },
+              },
+              {
+                name: '\u6279\u53d1/\u96f6\u552e',
+                value: 9,
+                textStyle: {
+                  color: 'rgb(28,55,66)',
+                },
+              },
+              {
+                name: '\u53a8\u623f\u7c7b\u7535\u5668',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(61,134,111)',
+                },
+              },
+              {
+                name: '\u666f\u533a',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(122,123,31)',
+                },
+              },
+              {
+                name: '\u7535\u5546\u4ea7\u54c1\u7ecf\u7406 ',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(61,73,160)',
+                },
+              },
+              {
+                name: '\u8f6f\u786c\u4ef6\u96c6\u6210',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(103,114,14)',
+                },
+              },
+              {
+                name: '\u6570\u5b57\u5316',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(138,31,5)',
+                },
+              },
+              {
+                name: '\u5ba0\u7269\u884c\u4e1a',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(62,40,17)',
+                },
+              },
+              {
+                name: 'App\u4ea7\u54c1\u7ecf\u7406 \u793e\u4ea4',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(44,64,17)',
+                },
+              },
+              {
+                name: '\u4ea7\u54c1\u7ba1\u7406',
+                value: 2,
+                textStyle: {
+                  color: 'rgb(76,120,41)',
+                },
+              },
+              {
+                name: '\u5e02\u573a\u63a8\u5e7f',
+                value: 3,
+                textStyle: {
+                  color: 'rgb(143,46,147)',
+                },
+              },
+              {
+                name: '\u5e02\u573a\u914d\u5408',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(27,106,43)',
+                },
+              },
+              {
+                name: '\u533b\u7597\u5065\u5eb7\u4ea7\u54c1',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(87,85,132)',
+                },
+              },
+              {
+                name: '\u5feb\u6d88\u4ea7\u54c1\u7ecf\u7406',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(2,22,153)',
+                },
+              },
+              {
+                name: 'SaaS\u4ea7\u54c1',
+                value: 16,
+                textStyle: {
+                  color: 'rgb(84,132,35)',
+                },
+              },
+              {
+                name: '\u5e02\u573a\u62d3\u5c55',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(60,51,138)',
+                },
+              },
+              {
+                name: '\u5316\u5de5\u884c\u4e1a',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(120,6,131)',
+                },
+              },
+              {
+                name: '\u4e24\u5b63\u7535\u5668',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(124,5,142)',
+                },
+              },
+              {
+                name: '\u5e94\u6025\u884c\u4e1a',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(122,32,8)',
+                },
+              },
+              {
+                name: '\u5e02\u573a\u8c03\u7814',
+                value: 32,
+                textStyle: {
+                  color: 'rgb(128,109,98)',
+                },
+              },
+              {
+                name: '\u4ea7\u54c1\u8fed\u4ee3',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(101,33,58)',
+                },
+              },
+              {
+                name: 'IOT',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(26,26,69)',
+                },
+              },
+              {
+                name: '\u4ea7\u54c1\u5e02\u573a',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(117,4,21)',
+                },
+              },
+              {
+                name: '\u652f\u4ed8\u4ea7\u54c1',
+                value: 2,
+                textStyle: {
+                  color: 'rgb(18,0,155)',
+                },
+              },
+              {
+                name: 'HBase',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(94,12,154)',
+                },
+              },
+              {
+                name: '\u76f4\u64ad',
+                value: 4,
+                textStyle: {
+                  color: 'rgb(130,2,46)',
+                },
+              },
+              {
+                name: '\u533b\u5b66',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(105,35,77)',
+                },
+              },
+              {
+                name: '\u653f\u5e9c\u8f6f\u4ef6\u4ea7\u54c1',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(90,4,54)',
+                },
+              },
+              {
+                name: '\u5e94\u6025',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(9,22,154)',
+                },
+              },
+              {
+                name: '\u5668\u68b0\u6ce8\u518c\u4e0a\u5e02\u89c4\u5212',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(40,72,59)',
+                },
+              },
+              {
+                name: 'IoTDB',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(20,9,6)',
+                },
+              },
+              {
+                name: '\u8d44\u4ea7\u7ba1\u7406',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(79,46,153)',
+                },
+              },
+              {
+                name: '\u6570\u636e\u5b58\u50a8',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(80,142,43)',
+                },
+              },
+              {
+                name: '\u5e02\u573a\u8c03\u7814\u5206\u6790',
+                value: 2,
+                textStyle: {
+                  color: 'rgb(78,78,131)',
+                },
+              },
+              {
+                name: '\u793e\u4ea4\u4ea7\u54c1',
+                value: 6,
+                textStyle: {
+                  color: 'rgb(120,22,131)',
+                },
+              },
+              {
+                name: '\u79c1\u57df\u589e\u957f',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(140,53,145)',
+                },
+              },
+              {
+                name: '\u6570\u636e\u4ea7\u54c1',
+                value: 49,
+                textStyle: {
+                  color: 'rgb(19,140,142)',
+                },
+              },
+              {
+                name: '\u7535\u5b50\u5546\u52a1',
+                value: 17,
+                textStyle: {
+                  color: 'rgb(83,31,6)',
+                },
+              },
+              {
+                name: '\u533b\u836f\u884c\u4e1a',
+                value: 2,
+                textStyle: {
+                  color: 'rgb(14,139,134)',
+                },
+              },
+              {
+                name: 'IP',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(10,152,40)',
+                },
+              },
+              {
+                name: '\u76f8\u673a',
+                value: 3,
+                textStyle: {
+                  color: 'rgb(82,127,147)',
+                },
+              },
+              {
+                name: '\u8bed\u97f3\u4ea7\u54c1',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(92,46,62)',
+                },
+              },
+              {
+                name: '\u9700\u6c42\u6316\u6398',
+                value: 9,
+                textStyle: {
+                  color: 'rgb(80,27,18)',
+                },
+              },
+              {
+                name: '\u623f\u5730\u4ea7\u884c\u4e1a',
+                value: 2,
+                textStyle: {
+                  color: 'rgb(99,140,147)',
+                },
+              },
+              {
+                name: '\u4f01\u4e1a\u670d\u52a1',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(151,136,28)',
+                },
+              },
+              {
+                name: '\u533b\u836f\u4ea7\u54c1',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(123,68,78)',
+                },
+              },
+              {
+                name: '\u58a8\u5200',
+                value: 6,
+                textStyle: {
+                  color: 'rgb(144,99,100)',
+                },
+              },
+              {
+                name: '\u624b\u673aAPP',
+                value: 3,
+                textStyle: {
+                  color: 'rgb(48,25,10)',
+                },
+              },
+              {
+                name: '\u73a9\u5177/\u793c\u54c1',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(140,23,140)',
+                },
+              },
+              {
+                name: '\u7269\u8054\u7f51',
+                value: 4,
+                textStyle: {
+                  color: 'rgb(50,68,67)',
+                },
+              },
+              {
+                name: '\u6d77\u5916/\u8de8\u5883\u4e1a\u52a1',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(99,115,19)',
+                },
+              },
+              {
+                name: '\u5730\u533a\u7ecf\u7406',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(5,87,127)',
+                },
+              },
+              {
+                name: '\u671f\u8d27\u8bc1\u5238',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(143,26,13)',
+                },
+              },
+              {
+                name: '\u4ea4\u4e92\u8bbe\u8ba1',
+                value: 22,
+                textStyle: {
+                  color: 'rgb(146,54,136)',
+                },
+              },
+              {
+                name: '\u6e20\u9053\u9500\u552e',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(156,42,90)',
+                },
+              },
+              {
+                name: '\u6570\u5b57\u5316\u8fd0\u8425',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(106,124,144)',
+                },
+              },
+              {
+                name: 'Spark',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(157,45,20)',
+                },
+              },
+              {
+                name: '\u51fa\u5dee',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(132,93,136)',
+                },
+              },
+              {
+                name: '\u5356\u70b9\u6316\u6398',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(69,116,112)',
+                },
+              },
+              {
+                name: '\u73a9\u5177',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(48,109,63)',
+                },
+              },
+              {
+                name: '\u81ea\u52a8\u9a7e\u9a76',
+                value: 2,
+                textStyle: {
+                  color: 'rgb(96,141,100)',
+                },
+              },
+              {
+                name: 'Excel',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(84,110,132)',
+                },
+              },
+              {
+                name: '\u52a9\u7406',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(140,12,36)',
+                },
+              },
+              {
+                name: '\u4ea7\u54c1\u7ecf\u7406\u8bfe\u7a0b',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(22,32,35)',
+                },
+              },
+              {
+                name: 'OA\u4ea7\u54c1',
+                value: 5,
+                textStyle: {
+                  color: 'rgb(82,62,84)',
+                },
+              },
+              {
+                name: '\u5b66\u524d\u6559\u80b2',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(1,48,160)',
+                },
+              },
+              {
+                name: '\u786c\u4ef6\u7cfb\u7edf\u96c6\u6210',
+                value: 7,
+                textStyle: {
+                  color: 'rgb(158,75,73)',
+                },
+              },
+              {
+                name: '\u54a8\u8be2\u9879\u76ee',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(137,53,116)',
+                },
+              },
+              {
+                name: '\u9006\u53d8\u5668',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(35,147,95)',
+                },
+              },
+              {
+                name: 'GCP\u8ba4\u8bc1',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(59,155,146)',
+                },
+              },
+              {
+                name: 'HRM\u7cfb\u7edf',
+                value: 2,
+                textStyle: {
+                  color: 'rgb(21,54,1)',
+                },
+              },
+              {
+                name: '\u8bc1\u5238\u4e1a',
+                value: 2,
+                textStyle: {
+                  color: 'rgb(16,160,68)',
+                },
+              },
+              {
+                name: '\u4f4f\u5bbf/\u9910\u996e\u4e1a',
+                value: 2,
+                textStyle: {
+                  color: 'rgb(101,47,136)',
+                },
+              },
+              {
+                name: '\u91d1\u878d\u4ea7\u54c1',
+                value: 12,
+                textStyle: {
+                  color: 'rgb(149,130,101)',
+                },
+              },
+              {
+                name: '\u552e\u524d\u4ea7\u54c1\u7ecf\u7406',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(82,7,29)',
+                },
+              },
+              {
+                name: '\u6d77\u5916',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(55,20,151)',
+                },
+              },
+              {
+                name: '\u4ea7\u54c1\u5168\u5468\u671f',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(8,28,62)',
+                },
+              },
+              {
+                name: '\u5eb7\u590d\u533b\u7597\u5668\u68b0',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(88,146,131)',
+                },
+              },
+              {
+                name: '\u5bb6\u5177\u8bbe\u8ba1',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(16,79,26)',
+                },
+              },
+              {
+                name: 'IIoT',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(67,77,79)',
+                },
+              },
+              {
+                name: '\u5e93\u5b58\u7ba1\u7406',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(0,62,18)',
+                },
+              },
+              {
+                name: '\u65b0\u80fd\u6e90',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(83,36,78)',
+                },
+              },
+              {
+                name: '\u4f9b\u5e94\u94fe',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(34,58,1)',
+                },
+              },
+              {
+                name: '\u6570\u636e\u53ef\u89c6\u5316',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(149,5,93)',
+                },
+              },
+              {
+                name: 'excel',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(150,79,41)',
+                },
+              },
+              {
+                name: '\u4eba\u624d\u53d1\u5c55',
+                value: 1,
+                textStyle: {
+                  color: 'rgb(96,38,74)',
+                },
+              },
+            ],
+            drawOutOfBound: false,
+            textStyle: {
+              emphasis: {},
+            },
+          },
+        ],
+        legend: [
+          {
+            data: [],
+            selected: {},
+            show: true,
+            padding: 5,
+            itemGap: 10,
+            itemWidth: 25,
+            itemHeight: 14,
+            backgroundColor: 'transparent',
+            borderColor: '#ccc',
+            borderWidth: 1,
+            borderRadius: 0,
+            pageButtonItemGap: 5,
+            pageButtonPosition: 'end',
+            pageFormatter: '{current}/{total}',
+            pageIconColor: '#2f4554',
+            pageIconInactiveColor: '#aaa',
+            pageIconSize: 15,
+            animationDurationUpdate: 800,
+            selector: false,
+            selectorPosition: 'auto',
+            selectorItemGap: 7,
+            selectorButtonGap: 10,
+          },
+        ],
+        tooltip: {
+          show: true,
+          trigger: 'item',
+          triggerOn: 'mousemove|click',
+          axisPointer: {
+            type: 'line',
+          },
+          showContent: true,
+          alwaysShowContent: false,
+          showDelay: 0,
+          hideDelay: 100,
+          enterable: false,
+          confine: false,
+          appendToBody: false,
+          transitionDuration: 0.4,
+          textStyle: {
+            fontSize: 14,
+          },
+          borderWidth: 0,
+          padding: 5,
+          order: 'seriesAsc',
         },
-        "borderWidth": 0,
-        "padding": 5,
-        "order": "seriesAsc"
-    },
-    "title": [
-        {
-            "show": true,
-            "text": "WordCloud-shape-diamond",
-            "target": "blank",
-            "subtarget": "blank",
-            "padding": 5,
-            "itemGap": 10,
-            "textAlign": "auto",
-            "textVerticalAlign": "auto",
-            "triggerEvent": false
-        }
-    ]
-};
-        chart_827d61f6a650419f8508d3109c8bf39f.setOption(option_827d61f6a650419f8508d3109c8bf39f);
+        title: [
+          {
+            show: true,
+            text: 'WordCloud-shape-diamond',
+            target: 'blank',
+            subtarget: 'blank',
+            padding: 5,
+            itemGap: 10,
+            textAlign: 'auto',
+            textVerticalAlign: 'auto',
+            triggerEvent: false,
+          },
+        ],
+      };
+      chart_827d61f6a650419f8508d3109c8bf39f.setOption(
+        option_827d61f6a650419f8508d3109c8bf39f
+      );
     </script>
-</body>
+  </body>
 </html>

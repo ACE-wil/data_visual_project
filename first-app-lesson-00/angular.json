@@ -17,14 +17,9 @@
             "main": "src/main.ts",
             "polyfills": ["zone.js"],
             "tsConfig": "tsconfig.app.json",
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ],
-            "styles": [
-              "src/styles.css"
-            ],
-            "scripts": []
+            "assets": ["src/favicon.ico", "src/assets"],
+            "styles": ["src/styles.css"],
+            "scripts": ["src/assets/dongtai.js", "src/assets/housechart.js"]
           },
           "configurations": {
             "production": {
@@ -55,6 +50,11 @@
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "host": "127.0.0.1",
+            "port": 5001,
+            "disableHostCheck": true
+          },
           "configurations": {
             "production": {
               "browserTarget": "angular.io-example:build:production"
@@ -76,13 +76,8 @@
           "options": {
             "polyfills": ["zone.js", "zone.js/testing"],
             "tsConfig": "tsconfig.spec.json",
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ],
-            "styles": [
-              "src/styles.css"
-            ],
+            "assets": ["src/favicon.ico", "src/assets"],
+            "styles": ["src/styles.css"],
             "scripts": []
           }
         },
@@ -97,11 +92,18 @@
               "devServerTarget": "angular.io-example:serve:production"
             }
           }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": ["src/**/*.ts", "src/**/*.html"]
+          }
         }
       }
     }
   },
   "cli": {
-    "analytics": "3a98e85e-48aa-4c14-896c-db287bd03d4e"
+    "analytics": "3a98e85e-48aa-4c14-896c-db287bd03d4e",
+    "schematicCollections": ["@angular-eslint/schematics"]
   }
 }
