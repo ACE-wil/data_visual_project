@@ -19,7 +19,7 @@
 <img src="https://raw.githubusercontent.com/ACE-wil/data_visual_project/main/images/neitui.png">
 
 * 看房 包含广州各区的租房价格，为大学生租房提供信息资讯
-<img src="https://raw.githubusercontent.com/ACE-wil/data_visual_project/main/images/findHouse.png">
+<img src="https://github.com/ACE-wil/data_visual_project/blob/main/images/findHouse.png">
 
 * 理财 为大学生理财提供方法论以及相关知识
 <img src="https://raw.githubusercontent.com/ACE-wil/data_visual_project/main/images/licai.png">
